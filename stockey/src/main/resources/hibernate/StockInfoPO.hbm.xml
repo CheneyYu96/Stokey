@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-20 21:42:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.xeon.stockey.po.StockInfoPO" table="STOCKINFOPO">
+        <id name="symbol" type="java.lang.String">
+            <column name="SYMBOL" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="info" type="java.lang.String">
+            <column name="INFO" />
+        </property>
+        <property name="market" type="java.lang.String">
+            <column name="MARKET" />
+        </property>
+        <property name="region" type="java.lang.String">
+            <column name="REGION" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="englishName" type="java.lang.String">
+            <column name="ENGLISHNAME" />
+        </property>
+        <property name="registerCapital" type="java.lang.String">
+            <column name="REGISTERCAPITAL" />
+        </property>
+        <property name="organize" type="java.lang.String">
+            <column name="ORGANIZE" />
+        </property>
+    </class>
+</hibernate-mapping>

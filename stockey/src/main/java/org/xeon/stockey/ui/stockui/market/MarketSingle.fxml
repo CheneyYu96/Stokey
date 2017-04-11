@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="745.0" stylesheets="@../../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.market.StockMarketController">
+
+			<children>
+				<StackPane layoutX="15.0" layoutY="68.0" prefHeight="373.0" prefWidth="716.0" stylesheets="@../../css/style.css" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="68.0">
+					<children>
+						<TableView fx:id="stockTable" editable="true" onMouseClicked="#jumpToStock" prefHeight="373.0" prefWidth="710.0">
+							<columns>
+								<TableColumn fx:id="name" prefWidth="180.0" text="股票名" />
+								<TableColumn fx:id="stockCode" prefWidth="150.0" text="股票代码" />
+								<TableColumn fx:id="open" prefWidth="200.0" text="开盘价" />
+								<TableColumn fx:id="close" prefWidth="200.0" text="收盘价" />
+							</columns>
+						</TableView>
+					</children>
+				</StackPane>
+				<Label alignment="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="41.0" prefWidth="677.0" text="大盘数据" textAlignment="CENTER">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+			</children>
+		
+
+</AnchorPane>

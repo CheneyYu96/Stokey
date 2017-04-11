@@ -1,0 +1,31 @@
+
+.background-add{
+	-fx-background-color: #eeeeee;
+	-fx-background-size: cover;
+}
+
+.label-title{
+    -fx-font-size: 13pt;
+    -fx-font-family: "方正幼线简体 常规";
+	-fx-font-color:#dcdbdb;
+    -fx-text-fill: #dcdbdb;
+    -fx-opacity: 1;
+}
+
+.label-tip{
+	-fx-font-size: 10pt;
+	-fx-font-family: "方正幼线简体 常规";
+	-fx-font-color: #181818;
+	-fx-text-fill: #181818;
+}
+
+.button{
+    -fx-border-top-left-radius:1px;
+	-fx-border-top-right-radius:1px;
+    -fx-border-bottom-left-radius:1px;
+	-fx-border-bottom-right-radius:1px;
+	-fx-cursor:hand;
+    -fx-size:20;
+    -fx-border-style :none;
+    -fx-font-size: 10pt;
+}

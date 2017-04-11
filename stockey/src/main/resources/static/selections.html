@@ -1,0 +1,272 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Sun May 22 2016 15:34:45 GMT+0000 (UTC) -->
+<html data-wf-site="573dfa84ee15ab7f704bce71" data-wf-page="573dfa84ee15ab7f704bce7b" data-wf-status='1'
+      data-wf-domain="alandelips-first-site.webflow.io">
+<head>
+    <meta charset="utf-8">
+    <title>Selections</title>
+    <meta property="og:title" content="Selections">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Webflow">
+    <script src="https://cdn.bootcss.com/webfont/1.6.24/webfontloader.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/widgets.css">
+    <script>WebFont.load({
+        google: {
+            families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+        }
+    });</script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/echarts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/webclip.png">
+</head>
+<body>
+<div id="load" style="background: rgba(0, 0, 0, 0.57);z-index:20;position:fixed;display: none;">
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>G</div>
+    <div>N</div>
+    <div>I</div>
+    <div>D</div>
+    <div>A</div>
+    <div>O</div>
+    <div>L</div>
+</div>
+<div id="piechart" class="news-overlay" style="display: none;">
+    <div class="summary float-background">
+        <h3 style="float: left;">月总况</h3>
+
+        <h3 onclick="closePie()" style="cursor:pointer;float: right;">×</h3>
+
+        <div class="w-clearfix"></div>
+        <h5 style="float: left;margin: 0;">自选股盈利占比</h5>
+
+        <div class="w-clearfix"></div>
+        <hr/>
+        <div id="selections-chart" style="height: 80%;width: 100%;"></div>
+
+    </div>
+</div>
+<div id="popup" style="display: none;position:fixed;z-index:20">
+    <div class="wrapperOutside">
+        <div class="wrapperInside">
+            <!-- Dialog -->
+            <div class="dialogContainer">
+                <!-- Dialog title and body -->
+                <div class="dialogContent">
+                    <div id="stockName" class="dialogContentTitle">农业银行</div>
+                    <div id="stockCode" class="dialogContentSubtitle">sh601288</div>
+                    <div id="stockType" class="dialogContentSubtitle">银行股</div>
+                    <br>
+
+                    <div id="stockPrice" class="dialogContentBody">今日价格: 12.45</div>
+                    <div id="stockMarket" class="dialogContentBody">市场: SHANGHAI</div>
+                    <div id="stockInfo" class="dialogContentBody">上市日期: 1992-03-27</div>
+
+                </div>
+                <!-- Dialog action bar -->
+                <div class="dialogActionBar">
+                    <!-- Buttons -->
+                    <a class="buttonTouchTarget" href="#">
+                        <div class="buttonFlat" id="cancel" fit>再看看</div>
+                    </a><!-- This comment removes 4px gap between buttons-->
+                    <a class="buttonTouchTarget" href="#">
+                        <div class="buttonFlat" id="detail" fit>详情</div>
+                    </a><!-- This comment removes 4px gap between buttons-->
+                    <a class="buttonTouchTarget" href="#">
+                        <div class="buttonFlat red" id="collect">收藏</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper contact-overlay">
+    <a onclick="closeLogin()" class="contact-overlay-close"><font color="white" size="5sp">✕</font></a>
+
+    <div class="container">
+        <h1 id="logining" style="display: none"><font color="white">登录中...</font></h1>
+
+        <h1 id="signing" style="display: none"><font color="white">注册中...</font></h1>
+
+        <form class="form">
+            <ul class="tab-group">
+                <li id="login-tab" class="tab active"><a onclick="tabLogin()">登录</a></li>
+                <li id="signup-tab" class="tab"><a onclick="tabSignup()">注册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="login">
+                    <h1><font color="white">Welcome</font></h1>
+
+                    <form class="form">
+                        <input id="username" type="text" placeholder="用户名">
+                        <input id="password" type="password" placeholder="密码">
+                        <button id="login-button" type="submit">登录</button>
+                    </form>
+                </div>
+                <div id="signup">
+                    <h1><font color="white">加入StockEy</font></h1>
+
+                    <form class="form">
+                        <input id="signup_username" type="text" placeholder="用户名">
+                        <input id="signup_password" type="password" placeholder="密码">
+                        <input id="confirm_password" type="password" placeholder="确认密码">
+                        <input id="signup_email" type="email" placeholder="邮箱">
+                        <button type="submit" id="sign-button">注册</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="w-section hero-section about-page">
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" class="w-nav nav">
+        <div class="w-container" style="height:60px"><a href="./" class="w-nav-brand">
+            <div class="logo-text"><strong>STOCKEY</strong></div>
+        </a>
+            <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
+                <a href="./" class="w-nav-link nav-link">Home</a>
+                <a href="./market.html" class="w-nav-link nav-link">Market</a>
+                <a href="./selections.html" class="w-nav-link nav-link">Selections</a>
+                <a href="./scheme.html" class="w-nav-link nav-link">scheme</a>
+                <a id="login-signup-button" href="javascript:showLogin()" class="w-nav-link nav-link contact">
+                    Login/Sign Up
+                </a>
+
+                <div class="w-nav-link nav-link">
+                    <div class="user-menu-toggle">
+                        <div>
+                            <img class="profile-img" src="images/1.jpg">
+
+                            <div id="user-title" style="padding-left:8px;float: right;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User menu -->
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <div class="profile-img"
+                                 style="background-image:url(images/1.jpg)">
+                            </div>
+                            <h3 id="user-name">Alan Delip</h3>
+
+                        </div>
+                        <div class="menu-nav">
+                            <li onclick="link('./selections.html')"><span></span>My Selections</li>
+                            <li onclick="link('./scheme.html')"><span></span>My Schemes</li>
+                            <li onclick="logout()"><span></span>Sign Out</li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-nav-button menu-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+    <h1>Selections</h1>
+
+    <div class="hero-overlay"></div>
+    <div class="cntr">
+        <div class="cntr-innr">
+            <label class="search" for="inpt_search">
+                <input id="inpt_search" type="text"/>
+            </label>
+
+            <h1 style="margin-top: 3px"><font color="white" size="3sp">Search for your selections.</font>
+                <a onclick="getInfluencePie()" style="cursor:pointer;text-decoration: none;font-size: 15px">总况</a>
+            </h1>
+        </div>
+    </div>
+</div>
+<div id="selections-rows" class="w-section section">
+    <div style="horiz-align: center;text-align: center">
+        <img src="images/logo.png">
+
+        <h3>请先登录</h3>
+        <!--<div  class="w-row selection-rows">-->
+        <!--<div class="w-col w-col-3 w-col-medium-6">-->
+        <!--<div data-ix="tile-1">-->
+        <!--<div onclick="select('sh600606')" class="selections-div bank-div">-->
+        <!--<div style="float:right;font-size: 20px">-->
+        <!--<a onclick="uncollect('sh600606')" style="cursor: pointer;text-decoration:none;color: #ffffff;">×</a>-->
+        <!--</div>-->
+        <!--<img width="100%" src="images/stock_images/0.jpg" class="selection-image">-->
+
+        <!--<h2 id="stock-name">绿地控股</h2>-->
+
+        <!--<div>sh600606</div>-->
+        <!--<div>房地产中介服务业</div>-->
+        <!--<hr/>-->
+        <!--<div class="w-row">-->
+        <!--<div class="w-col w-col-6"><h4>当前价格</h4>-->
+
+        <!--<div id="price-text" class="price-text">11.18</div>-->
+        <!--</div>-->
+        <!--<div class="w-col w-col-6"><h4>上市地区</h4>-->
+
+        <!--<div id="price-market" class="price-text">上海</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="w-section cta-section">
+    <div class="w-container">
+        <div class="cta-heading">Lets Work Together</div>
+        <a href="./scheme.html" class="w-button button">start scheme!</a></div>
+</div>
+<div class="w-section footer-section">
+    <div class="w-container">
+        <div class="w-row">
+            <div class="w-col w-col-3">
+                <a href="/" class="w-nav-brand logo-footer">
+                    <div class="logo-text footer-logo"><strong>STOCKEY</strong></div>
+                </a>
+            </div>
+            <div class="w-col w-col-9 w-clearfix footer-link-col">
+                <a href="#" data-ix="show-contact-overlay" class="nav-link footer-link contact">about us</a>
+                <a href="./scheme.html" class="nav-link footer-link">scheme</a>
+                <a href="./selections.html" class="nav-link footer-link">selections</a>
+                <a href="./market.html" class="nav-link footer-link">market</a>
+                <a href="./" class="nav-link footer-link">Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/selections-setting.js"></script>
+<script src="js/sweet-alert.js"></script>
+<script src="js/login.js"></script>
+<script src="js/pre-login.js"></script>
+<script src="js/selections-search.js"></script>
+<script type="text/javascript"
+        src="https://daks2k3a4ib2z.cloudfront.net/573dfa84ee15ab7f704bce71/js/webflow.a4e23db19.js"></script>
+<!--[if lte IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

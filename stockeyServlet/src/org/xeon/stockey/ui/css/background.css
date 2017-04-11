@@ -1,0 +1,79 @@
+.background{
+
+	-fx-background-image : url("image/background.png");
+	-fx-background-size: cover;
+}
+
+.label-close{
+	-fx-background-image : url("image/button/close.png");
+	-fx-background-size: cover;
+}
+.label-close:hover{
+	-fx-background-image : url("image/button/close-hover.png");
+	-fx-background-size: cover;
+}
+.label-close:pressed{
+	-fx-background-image : url("image/button/close-pressed.png");
+	-fx-background-size: cover;
+}
+
+.label-xiao{
+	-fx-background-image : url("image/button/xiao.png");
+	-fx-background-size: cover;
+}
+.label-xiao:hover{
+	-fx-background-image : url("image/button/xiao-hover.png");
+	-fx-background-size: cover;
+}
+.label-xiao:pressed{
+	-fx-background-image : url("image/button/xiao-pressed.png");
+	-fx-background-size: cover;
+}
+
+.label-schemes{
+	-fx-background-image : url("image/button/schemes_button.png");
+	-fx-background-size: cover;
+}
+.label-schemes-selected{
+	-fx-background-image : url("image/button/schemes_button_pressed.png");
+	-fx-background-size: cover;
+}
+
+.label-selection{
+	-fx-background-image : url("image/button/self_selection_button.png");
+	-fx-background-size: cover;
+}
+.label-selection-selected{
+	-fx-background-image : url("image/button/self_selection_button_pressed.png");
+	-fx-background-size: cover;
+}
+
+.label-market{
+	-fx-background-image : url("image/button/market_index_button.png");
+	-fx-background-size: cover;
+}
+.label-market-selected{
+	-fx-background-image : url("image/button/market_index_button_pressed.png");
+	-fx-background-size: cover;
+}
+
+.button.look {
+    -fx-size:13;
+    -fx-border-style:none;
+    -fx-font-size: 10pt;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+	-fx-size:13;
+}
+
+.button.look:hover {
+}
+
+.button.look:pressed, .button.sure:default:hover:pressed {
+}
+
+.button.look:focused {
+
+    -fx-border-style:none;
+
+}
+

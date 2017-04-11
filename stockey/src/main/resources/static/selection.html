@@ -1,0 +1,292 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Sun May 22 2016 15:34:45 GMT+0000 (UTC) -->
+<html data-wf-site="573dfa84ee15ab7f704bce71" data-wf-page="573dfa84ee15ab7f704bce7b" data-wf-status='1'
+      data-wf-domain="alandelips-first-site.webflow.io">
+<head>
+    <meta charset="utf-8">
+    <title>Selection</title>
+    <meta property="og:title" content="Selections">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Webflow">
+    <script src="https://cdn.bootcss.com/webfont/1.6.24/webfontloader.js"></script>
+    <script>WebFont.load({
+        google: {
+            families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+        }
+    });</script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <link rel="stylesheet" href="css/datepicker.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css"/>
+    <link rel="stylesheet" type="text/css" href="css/widgets.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/webclip.png">
+</head>
+<body>
+<div id="load" style="background: rgba(0, 0, 0, 0.57);z-index:20;position:fixed;display: none;">
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>G</div>
+    <div>N</div>
+    <div>I</div>
+    <div>D</div>
+    <div>A</div>
+    <div>O</div>
+    <div>L</div>
+</div>
+<div id="news-wrapper" class="w-clearfix news-overlay" style="display: none;">
+    <div class="news-block float-background">
+        <h3 style="float: left;">相关新闻</h3>
+
+        <h3 onclick="closeNews()" style="cursor:pointer;float: right;">×</h3>
+
+        <div class="w-clearfix"></div>
+        <hr/>
+        <div>来源：www.sina.com.cn</div>
+        <ul id="news"></ul>
+    </div>
+</div>
+<div class="wrapper contact-overlay">
+    <a onclick="closeLogin()" class="contact-overlay-close"><font color="white" size="5sp">✕</font></a>
+
+    <div class="container">
+        <h1 id="logining" style="display: none"><font color="white">登录中...</font></h1>
+
+        <h1 id="signing" style="display: none"><font color="white">注册中...</font></h1>
+
+        <form class="form">
+            <ul class="tab-group">
+                <li id="login-tab" class="tab active"><a onclick="tabLogin()">登录</a></li>
+                <li id="signup-tab" class="tab"><a onclick="tabSignup()">注册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="login">
+                    <h1><font color="white">Welcome</font></h1>
+
+                    <form class="form">
+                        <input id="username" type="text" placeholder="用户名">
+                        <input id="password" type="password" placeholder="密码">
+                        <button id="login-button" type="submit">登录</button>
+                    </form>
+                </div>
+                <div id="signup">
+                    <h1><font color="white">加入StockEy</font></h1>
+
+                    <form class="form">
+                        <input id="signup_username" type="text" placeholder="用户名">
+                        <input id="signup_password" type="password" placeholder="密码">
+                        <input id="confirm_password" type="password" placeholder="确认密码">
+                        <input id="signup_email" type="email" placeholder="邮箱">
+                        <button type="submit" id="sign-button">注册</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="w-section hero-section about-page">
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" class="w-nav nav">
+        <div class="w-container" style="height:60px"><a href="./" class="w-nav-brand">
+            <div class="logo-text"><strong>STOCKEY</strong></div>
+        </a>
+            <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
+                <a href="./" class="w-nav-link nav-link">Home</a>
+                <a href="./market.html" class="w-nav-link nav-link">Market</a>
+                <a href="./selections.html" class="w-nav-link nav-link">Selections</a>
+                <a href="./scheme.html" class="w-nav-link nav-link">scheme</a>
+                <a id="login-signup-button" href="javascript:showLogin()" class="w-nav-link nav-link contact">
+                    Login/Sign Up
+                </a>
+
+                <div class="w-nav-link nav-link">
+                    <div class="user-menu-toggle">
+                        <div>
+                            <img class="profile-img" src="images/1.jpg">
+
+                            <div id="user-title" style="padding-left:8px;float: right;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User menu -->
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <div class="profile-img"
+                                 style="background-image:url(images/1.jpg)">
+                            </div>
+                            <h3 id="user-name">Alan Delip</h3>
+
+                        </div>
+                        <div class="menu-nav">
+                            <li onclick="link('./selections.html')"><span></span>My Selections</li>
+                            <li onclick="link('./scheme.html')"><span></span>My Schemes</li>
+                            <li onclick="logout()"><span></span>Sign Out</li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-nav-button menu-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+    <h1 id="title">Selection</h1>
+
+    <h3 class="myh3" id="market">正在获取...</h3>
+
+    <h2 class="myh2" id="price">正在获取...</h2>
+
+    <div class="hero-overlay"></div>
+</div>
+<div class="w-section section" ng-app="selection" ng-controller="setRange">
+    <div class="w-container" style="max-width: 1200px">
+        <div class="market-setting-div float-background market-setting-list">
+            <ul>
+                <div class="nav-title">
+                    <p style="margin: 0;font-size: 20px">指标面板</p>
+
+                    <p style="margin: 0;font-size: 12px;">Setting Board</p>
+                </div>
+                <li id="kdj-button">KDJ指标</li>
+                <hr/>
+                <li id="macd-button">MACD指标</li>
+                <hr/>
+                <li id="rsi-button">RSI指标</li>
+                <hr/>
+                <li id="trend-button">标准走势图</li>
+                <hr/>
+                <li id="table-button">表格</li>
+                <hr/>
+                <li id="recommend-button">相似股票推荐</li>
+                <hr/>
+                <li id="news-button">相关新闻</li>
+                <hr/>
+                <li>
+                    <div class='like'>
+                        <button class='like-toggle basic3'>♥</button>
+                        <span class='hidden'>已收藏</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="w-clearfix center" style="float:left;margin-left: 20px">
+            <div id="stock-kdjChart" class="market-kchart-div float-background"></div>
+            <div id="stock-macdChart" class="market-kchart-div float-background" style="display: none"></div>
+            <div id="stock-rsiChart" class="market-kchart-div float-background" style="display: none"></div>
+            <div id="stock-trendChart" class="market-kchart-div float-background" style="display: none"></div>
+            <div id="stock-recommend" class="market-kchart-div float-background" style="display: none">
+                <h3 style="text-align: left">股票推荐</h3>
+                <hr/>
+            </div>
+        </div>
+        <div id="table" class="table-responsive-vertical shadow-z-1"
+             style="display: none;width: 950px;float:left;margin-left: 20px">
+            <table class="table table-hover table-mc-light-blue" id="keywords">
+                <thead>
+                <tr style="background-color: rgba(36, 7, 18, 0.05)">
+                    <th><a>Date</a></th>
+                    <th><a>Open(RMB)</a></th>
+                    <th><a>Close(RMB)</a></th>
+                    <th><a>High(RMB)</a></th>
+                    <th><a>Low(RMB)</a></th>
+                    <th><a>MA5(RMB)</a></th>
+                </tr>
+                </thead>
+                <tr ng-repeat="daily_data in stock_data">
+                    <td>{{daily_data.date}}</td>
+                    <td>{{daily_data.open}}</td>
+                    <td>{{daily_data.close}}</td>
+                    <td>{{daily_data.high}}</td>
+                    <td>{{daily_data.low}}</td>
+                    <td>{{daily_data.ma5}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="w-container">
+        <div class="w-row center">
+            <div class="w-col w-col-6" style="position: static"><h4>日期选择</h4>
+                <input id="start-time" type="hidden" value=""/>
+                <input id="end-time" type="hidden" value=""/>
+
+                <form style="position: static">
+                    <select class='custom-date' name='select'>
+                        <option value='7'>7 Days</option>
+                        <option value='30'>30 Days</option>
+                        <option selected='selected' value='90'>90 Days</option>
+                        <option value='180'>180 Days</option>
+                        <option value='365'>365 Days</option>
+                        <option value='custom'>Custom</option>
+                    </select>
+                </form>
+                <a href="#" class="w-button market-setting-button" onclick="getTimeRange()" ng-click="refresh()">
+                    <strong>Apply</strong>
+                </a>
+            </div>
+
+            <div class="w-col w-col-6"><h4>日常分析</h4>
+
+                <p id="comment" style="font-size: 15px"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-section cta-section">
+    <div class="w-container">
+        <div class="cta-heading">Lets Work Together</div>
+        <a href="./scheme.html" class="w-button button">start scheme!</a></div>
+</div>
+<div class="w-section footer-section">
+    <div class="w-container">
+        <div class="w-row">
+            <div class="w-col w-col-3">
+                <a href="/" class="w-nav-brand logo-footer">
+                    <div class="logo-text footer-logo"><strong>STOCKEY</strong></div>
+                </a>
+            </div>
+            <div class="w-col w-col-9 w-clearfix footer-link-col">
+                <a href="#" data-ix="show-contact-overlay" class="nav-link footer-link contact">about us</a>
+                <a href="./scheme.html" class="nav-link footer-link">scheme</a>
+                <a href="./selections.html" class="nav-link footer-link">selections</a>
+                <a href="./market.html" class="nav-link footer-link">market</a>
+                <a href="./" class="nav-link footer-link">Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/hero-hide.js"></script>
+<script src="js/selection-chart-setting.js"></script>
+<script src="js/login.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/sweet-alert.js"></script>
+<script src="js/pre-login.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/custom-table.js"></script>
+<script src="js/selection-setting.js"></script>
+<script type="text/javascript"
+        src="https://daks2k3a4ib2z.cloudfront.net/573dfa84ee15ab7f704bce71/js/webflow.a4e23db19.js"></script>
+<!--[if lte IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

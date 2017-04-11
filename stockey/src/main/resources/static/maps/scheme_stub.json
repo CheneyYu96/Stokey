@@ -1,0 +1,2888 @@
+{
+    "2013-01-02T21:00:00.000Z": {
+        "algo_volatility": 0,
+        "algorithm_period_return": 0,
+        "alpha": -0.0186,
+        "benchmark_period_return": 0.0254034207,
+        "benchmark_volatility": 0,
+        "beta": 0,
+        "capital_used": 0,
+        "ending_cash": 10000000,
+        "ending_exposure": 0,
+        "ending_value": 0,
+        "excess_return": -0.0186,
+        "gross_leverage": 0,
+        "information": null,
+        "long_exposure": 0,
+        "long_value": 0,
+        "longs_count": 0,
+        "max_drawdown": 0,
+        "max_leverage": 0,
+        "net_leverage": 0,
+        "orders": [
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-02T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-02T00:00:00.000Z",
+                "id": "28768fcc863f495f8488709a55adb8f3",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 0,
+        "portfolio_value": 10000000,
+        "positions": [],
+        "returns": 0,
+        "sharpe": null,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": 0,
+        "starting_cash": 10000000,
+        "starting_exposure": 0,
+        "starting_value": 0,
+        "trading_days": 1,
+        "transactions": [],
+        "treasury_period_return": 0.0186
+    },
+    "2013-01-03T21:00:00.000Z": {
+        "algo_volatility": 0.0000011225,
+        "algorithm_period_return": -1e-7,
+        "alpha": -0.0192231939,
+        "benchmark_period_return": 0.0232648212,
+        "benchmark_volatility": 0.3085636892,
+        "beta": 0.0000036378,
+        "capital_used": -54210.5000003411,
+        "ending_cash": 9945789.49999966,
+        "ending_exposure": 54209.5,
+        "ending_value": 54209.5,
+        "excess_return": -0.0192001,
+        "gross_leverage": 0.0054209505,
+        "information": -2611480.03966554,
+        "long_exposure": 54209.5,
+        "long_value": 54209.5,
+        "longs_count": 1,
+        "max_drawdown": 1e-7,
+        "max_leverage": 0,
+        "net_leverage": 0.0054209505,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-02T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-03T00:00:00.000Z",
+                "id": "28768fcc863f495f8488709a55adb8f3",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-03T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-03T00:00:00.000Z",
+                "id": "34d36f43e7f64e5dabc0ea44ef447ebe",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -1.0000003409,
+        "portfolio_value": 9999998.99999966,
+        "positions": [
+            {
+                "amount": 100,
+                "last_sale_price": 542.095,
+                "cost_basis": 542.1050000034,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -1e-7,
+        "sharpe": -17115.9386241671,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": 0,
+        "starting_cash": 10000000,
+        "starting_exposure": 0,
+        "starting_value": 0,
+        "trading_days": 2,
+        "transactions": [
+            {
+                "order_id": "28768fcc863f495f8488709a55adb8f3",
+                "price": 542.1050000034,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-03T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0192
+    },
+    "2013-01-04T21:00:00.000Z": {
+        "algo_volatility": 0.0013839382,
+        "algorithm_period_return": -0.00015115,
+        "alpha": -0.0359431972,
+        "benchmark_period_return": 0.0282431034,
+        "benchmark_volatility": 0.2268983497,
+        "beta": 0.0016771758,
+        "capital_used": -52701.000000117,
+        "ending_cash": 9893088.499999542,
+        "ending_exposure": 105400,
+        "ending_value": 105400,
+        "excess_return": -0.01945115,
+        "gross_leverage": 0.0105415934,
+        "information": -1723.4275653861,
+        "long_exposure": 105400,
+        "long_value": 105400,
+        "longs_count": 1,
+        "max_drawdown": 0.00015115,
+        "max_leverage": 0,
+        "net_leverage": 0.0105415934,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-03T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-04T00:00:00.000Z",
+                "id": "34d36f43e7f64e5dabc0ea44ef447ebe",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-04T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-04T00:00:00.000Z",
+                "id": "31747390338f4ca7b9dac6c5f405b4ff",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -1510.5000001173,
+        "portfolio_value": 9998488.499999542,
+        "positions": [
+            {
+                "amount": 200,
+                "last_sale_price": 527,
+                "cost_basis": 534.5575000023,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.00015105,
+        "sharpe": -23.1199625861,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -28.3291958325,
+        "starting_cash": 9945789.49999966,
+        "starting_exposure": 54209.5,
+        "starting_value": 54209.5,
+        "trading_days": 3,
+        "transactions": [
+            {
+                "order_id": "34d36f43e7f64e5dabc0ea44ef447ebe",
+                "price": 527.0100000012,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-04T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0193
+    },
+    "2013-01-07T21:00:00.000Z": {
+        "algo_volatility": 0.0011338074,
+        "algorithm_period_return": -0.00021325,
+        "alpha": -0.0349898306,
+        "benchmark_period_return": 0.0250317808,
+        "benchmark_volatility": 0.2102215658,
+        "beta": 0.001511797,
+        "capital_used": -52391.0000001752,
+        "ending_cash": 9840697.499999367,
+        "ending_exposure": 157170,
+        "ending_value": 157170,
+        "excess_return": -0.01941325,
+        "gross_leverage": 0.0157203524,
+        "information": -1402.7399713375,
+        "long_exposure": 157170,
+        "long_value": 157170,
+        "longs_count": 1,
+        "max_drawdown": 0.00021325,
+        "max_leverage": 0,
+        "net_leverage": 0.0157203524,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-04T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-07T00:00:00.000Z",
+                "id": "31747390338f4ca7b9dac6c5f405b4ff",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-07T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-07T00:00:00.000Z",
+                "id": "a130df12d55e4f899561b2fd9e4f630d",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -621.0000001751,
+        "portfolio_value": 9997867.499999367,
+        "positions": [
+            {
+                "amount": 300,
+                "last_sale_price": 523.9,
+                "cost_basis": 531.0083333354,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0000621094,
+        "sharpe": -28.7833280903,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -36.8825153232,
+        "starting_cash": 9893088.499999542,
+        "starting_exposure": 105400,
+        "starting_value": 105400,
+        "trading_days": 4,
+        "transactions": [
+            {
+                "order_id": "31747390338f4ca7b9dac6c5f405b4ff",
+                "price": 523.9100000018,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-07T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0192
+    },
+    "2013-01-08T21:00:00.000Z": {
+        "algo_volatility": 0.0011933271,
+        "algorithm_period_return": -0.00017105,
+        "alpha": -0.0276445861,
+        "benchmark_period_return": 0.0217082466,
+        "benchmark_volatility": 0.1941660119,
+        "beta": 0.0001150173,
+        "capital_used": -52532.0000001957,
+        "ending_cash": 9788165.499999171,
+        "ending_exposure": 210124,
+        "ending_value": 210124,
+        "excess_return": -0.01907105,
+        "gross_leverage": 0.0210159948,
+        "information": -924.068955891,
+        "long_exposure": 210124,
+        "long_value": 210124,
+        "longs_count": 1,
+        "max_drawdown": 0.00021325,
+        "max_leverage": 0,
+        "net_leverage": 0.0210159948,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-07T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-08T00:00:00.000Z",
+                "id": "a130df12d55e4f899561b2fd9e4f630d",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-08T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-08T00:00:00.000Z",
+                "id": "04e2b156892243aab6399707fd7c5812",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 421.9999998044,
+        "portfolio_value": 9998289.499999171,
+        "positions": [
+            {
+                "amount": 400,
+                "last_sale_price": 525.31,
+                "cost_basis": 529.5862500021,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.000042209,
+        "sharpe": -23.0623434407,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -31.1030650959,
+        "starting_cash": 9840697.499999367,
+        "starting_exposure": 157170,
+        "starting_value": 157170,
+        "trading_days": 5,
+        "transactions": [
+            {
+                "order_id": "a130df12d55e4f899561b2fd9e4f630d",
+                "price": 525.320000002,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-08T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0189
+    },
+    "2013-01-09T21:00:00.000Z": {
+        "algo_volatility": 0.0021858839,
+        "algorithm_period_return": -0.00049955,
+        "alpha": -0.0405983743,
+        "benchmark_period_return": 0.0244217674,
+        "benchmark_volatility": 0.1740196027,
+        "beta": 0.0008116623,
+        "capital_used": -51711.000000244,
+        "ending_cash": 9736454.499998927,
+        "ending_exposure": 258550,
+        "ending_value": 258550,
+        "excess_return": -0.01929955,
+        "gross_leverage": 0.0258679223,
+        "information": -478.8430543057,
+        "long_exposure": 258550,
+        "long_value": 258550,
+        "longs_count": 1,
+        "max_drawdown": 0.00049955,
+        "max_leverage": 0,
+        "net_leverage": 0.0258679223,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-08T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-09T00:00:00.000Z",
+                "id": "04e2b156892243aab6399707fd7c5812",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-09T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-09T00:00:00.000Z",
+                "id": "c7ec3a9360344bffbb0e3f4825775e06",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -3285.000000244,
+        "portfolio_value": 9995004.499998927,
+        "positions": [
+            {
+                "amount": 500,
+                "last_sale_price": 517.1,
+                "cost_basis": 527.0910000021,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0003285562,
+        "sharpe": -18.1990908654,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -22.0043402938,
+        "starting_cash": 9788165.499999171,
+        "starting_exposure": 210124,
+        "starting_value": 210124,
+        "trading_days": 6,
+        "transactions": [
+            {
+                "order_id": "04e2b156892243aab6399707fd7c5812",
+                "price": 517.1100000024,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-09T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0188
+    },
+    "2013-01-10T21:00:00.000Z": {
+        "algo_volatility": 0.0031388711,
+        "algorithm_period_return": -0.00017915,
+        "alpha": -0.0287300258,
+        "benchmark_period_return": 0.0322047244,
+        "benchmark_volatility": 0.1602540741,
+        "beta": 0.0027893618,
+        "capital_used": -52352.0000001136,
+        "ending_cash": 9684102.499998813,
+        "ending_exposure": 314106,
+        "ending_value": 314106,
+        "excess_return": -0.01927915,
+        "gross_leverage": 0.0314162282,
+        "information": -371.4136253075,
+        "long_exposure": 314106,
+        "long_value": 314106,
+        "longs_count": 1,
+        "max_drawdown": 0.00049955,
+        "max_leverage": 0,
+        "net_leverage": 0.0314162282,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-09T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-10T00:00:00.000Z",
+                "id": "c7ec3a9360344bffbb0e3f4825775e06",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-10T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-10T00:00:00.000Z",
+                "id": "4eaf165123b4411aa4940554f3d551d4",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 3203.9999998864,
+        "portfolio_value": 9998208.499998813,
+        "positions": [
+            {
+                "amount": 600,
+                "last_sale_price": 523.51,
+                "cost_basis": 526.4958333353,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0003205601,
+        "sharpe": -8.1396781012,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -14.1322812072,
+        "starting_cash": 9736454.499998927,
+        "starting_exposure": 258550,
+        "starting_value": 258550,
+        "trading_days": 7,
+        "transactions": [
+            {
+                "order_id": "c7ec3a9360344bffbb0e3f4825775e06",
+                "price": 523.5200000011,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-10T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0191
+    },
+    "2013-01-11T21:00:00.000Z": {
+        "algo_volatility": 0.003053816,
+        "algorithm_period_return": -0.00037191,
+        "alpha": -0.0343735811,
+        "benchmark_period_return": 0.0321556804,
+        "benchmark_volatility": 0.1506239826,
+        "beta": 0.0037810878,
+        "capital_used": -52030.900000332,
+        "ending_cash": 9632071.599998482,
+        "ending_exposure": 364209.3,
+        "ending_value": 364209.3,
+        "excess_return": -0.01927191,
+        "gross_leverage": 0.0364344803,
+        "information": -335.5208986567,
+        "long_exposure": 364209.3,
+        "long_value": 364209.3,
+        "longs_count": 1,
+        "max_drawdown": 0.00049955,
+        "max_leverage": 0,
+        "net_leverage": 0.0364344803,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-10T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-11T00:00:00.000Z",
+                "id": "4eaf165123b4411aa4940554f3d551d4",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-11T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-11T00:00:00.000Z",
+                "id": "bd93f1ac532248d6bb3f3df68cf2d57c",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -1927.6000003312,
+        "portfolio_value": 9996280.899998482,
+        "positions": [
+            {
+                "amount": 700,
+                "last_sale_price": 520.299,
+                "cost_basis": 525.6120000022,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0001927945,
+        "sharpe": -10.0252158914,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -18.9195450598,
+        "starting_cash": 9684102.499998813,
+        "starting_exposure": 314106,
+        "starting_value": 314106,
+        "trading_days": 8,
+        "transactions": [
+            {
+                "order_id": "4eaf165123b4411aa4940554f3d551d4",
+                "price": 520.3090000033,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-11T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0189
+    },
+    "2013-01-14T21:00:00.000Z": {
+        "algo_volatility": 0.007217171,
+        "algorithm_period_return": -0.00167044,
+        "alpha": -0.0759973071,
+        "benchmark_period_return": 0.0311950826,
+        "benchmark_volatility": 0.14329396,
+        "beta": 0.0120821933,
+        "capital_used": -50176.000000073,
+        "ending_cash": 9581895.599998409,
+        "ending_exposure": 401400,
+        "ending_value": 401400,
+        "excess_return": -0.02057044,
+        "gross_leverage": 0.0402071637,
+        "information": -127.5062808136,
+        "long_exposure": 401400,
+        "long_value": 401400,
+        "longs_count": 1,
+        "max_drawdown": 0.00167044,
+        "max_leverage": 0,
+        "net_leverage": 0.0402071637,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-11T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-14T00:00:00.000Z",
+                "id": "bd93f1ac532248d6bb3f3df68cf2d57c",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-14T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-14T00:00:00.000Z",
+                "id": "9c3242d4c8624760b8b1cdaac20fe2bb",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -12985.3000000734,
+        "portfolio_value": 9983295.599998409,
+        "positions": [
+            {
+                "amount": 800,
+                "last_sale_price": 501.75,
+                "cost_basis": 522.630500002,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0012990131,
+        "sharpe": -9.0994546173,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -9.7671180313,
+        "starting_cash": 9632071.599998482,
+        "starting_exposure": 364209.3,
+        "starting_value": 364209.3,
+        "trading_days": 9,
+        "transactions": [
+            {
+                "order_id": "bd93f1ac532248d6bb3f3df68cf2d57c",
+                "price": 501.7600000007,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-14T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0189
+    },
+    "2013-01-15T21:00:00.000Z": {
+        "algo_volatility": 0.0087094859,
+        "algorithm_period_return": -0.00293694,
+        "alpha": -0.1049180462,
+        "benchmark_period_return": 0.0323589612,
+        "benchmark_volatility": 0.135602515,
+        "beta": 0.0154448425,
+        "capital_used": -48593.0000000496,
+        "ending_cash": 9533302.599998359,
+        "ending_exposure": 437328,
+        "ending_value": 437328,
+        "excess_return": -0.02153694,
+        "gross_leverage": 0.0438616189,
+        "information": -102.1250529727,
+        "long_exposure": 437328,
+        "long_value": 437328,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.0438616189,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-14T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-15T00:00:00.000Z",
+                "id": "9c3242d4c8624760b8b1cdaac20fe2bb",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-15T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-15T00:00:00.000Z",
+                "id": "884de35ecce74564a42ee73c24d03143",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -12665.0000000503,
+        "portfolio_value": 9970630.599998359,
+        "positions": [
+            {
+                "amount": 900,
+                "last_sale_price": 485.92,
+                "cost_basis": 518.5526666685,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0012686192,
+        "sharpe": -10.6333357517,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -12.4189240231,
+        "starting_cash": 9581895.599998409,
+        "starting_exposure": 401400,
+        "starting_value": 401400,
+        "trading_days": 10,
+        "transactions": [
+            {
+                "order_id": "9c3242d4c8624760b8b1cdaac20fe2bb",
+                "price": 485.9300000005,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-15T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0186
+    },
+    "2013-01-16T21:00:00.000Z": {
+        "algo_volatility": 0.0130651497,
+        "algorithm_period_return": -0.00112174,
+        "alpha": -0.0488327864,
+        "benchmark_period_return": 0.0325623275,
+        "benchmark_volatility": 0.1294561231,
+        "beta": 0.0065075816,
+        "capital_used": -50610.0000000831,
+        "ending_cash": 9482692.599998275,
+        "ending_exposure": 506090.0000000001,
+        "ending_value": 506090.0000000001,
+        "excess_return": -0.01952174,
+        "gross_leverage": 0.0506658339,
+        "information": -59.0633390535,
+        "long_exposure": 506090.0000000001,
+        "long_value": 506090.0000000001,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.0506658339,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-15T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-16T00:00:00.000Z",
+                "id": "884de35ecce74564a42ee73c24d03143",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-16T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-16T00:00:00.000Z",
+                "id": "47469e0d36734acb91f074c791dc0955",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 18151.9999999162,
+        "portfolio_value": 9988782.599998275,
+        "positions": [
+            {
+                "amount": 1000,
+                "last_sale_price": 506.09,
+                "cost_basis": 517.3074000017,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0018205468,
+        "sharpe": -3.3752421294,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -5.9134542962,
+        "starting_cash": 9533302.599998359,
+        "starting_exposure": 437328,
+        "starting_value": 437328,
+        "trading_days": 11,
+        "transactions": [
+            {
+                "order_id": "884de35ecce74564a42ee73c24d03143",
+                "price": 506.1000000008,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-16T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0184
+    },
+    "2013-01-17T21:00:00.000Z": {
+        "algo_volatility": 0.012505492,
+        "algorithm_period_return": -0.00146284,
+        "alpha": -0.0539976089,
+        "benchmark_period_return": 0.038388996,
+        "benchmark_volatility": 0.1240482503,
+        "beta": 0.0055609574,
+        "capital_used": -50269.0000001915,
+        "ending_cash": 9432423.599998083,
+        "ending_exposure": 552948,
+        "ending_value": 552948,
+        "excess_return": -0.02036284,
+        "gross_leverage": 0.0553758059,
+        "information": -66.9216817119,
+        "long_exposure": 552948,
+        "long_value": 552948,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.0553758059,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-16T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-17T00:00:00.000Z",
+                "id": "47469e0d36734acb91f074c791dc0955",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-17T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-17T00:00:00.000Z",
+                "id": "44ad48e327b34d49b04baf812ab89aaf",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -3411.0000001919,
+        "portfolio_value": 9985371.599998083,
+        "positions": [
+            {
+                "amount": 1100,
+                "last_sale_price": 502.68,
+                "cost_basis": 515.9785454563,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0003414831,
+        "sharpe": -3.9678278878,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -7.1339384484,
+        "starting_cash": 9482692.599998275,
+        "starting_exposure": 506090.0000000001,
+        "starting_value": 506090.0000000001,
+        "trading_days": 12,
+        "transactions": [
+            {
+                "order_id": "47469e0d36734acb91f074c791dc0955",
+                "price": 502.6900000019,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-17T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0189
+    },
+    "2013-01-18T21:00:00.000Z": {
+        "algo_volatility": 0.0119974771,
+        "algorithm_period_return": -0.00175774,
+        "alpha": -0.0571441075,
+        "benchmark_period_return": 0.0419229145,
+        "benchmark_volatility": 0.1187715315,
+        "beta": 0.0055053101,
+        "capital_used": -50001.0000001753,
+        "ending_cash": 9382422.599997908,
+        "ending_exposure": 600000,
+        "ending_value": 600000,
+        "excess_return": -0.02045774,
+        "gross_leverage": 0.0601056501,
+        "information": -70.5758953025,
+        "long_exposure": 600000,
+        "long_value": 600000,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.0601056501,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-17T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-18T00:00:00.000Z",
+                "id": "44ad48e327b34d49b04baf812ab89aaf",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-18T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-18T00:00:00.000Z",
+                "id": "b434ab7e09794837aa1608323ef34179",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -2949.0000001751,
+        "portfolio_value": 9982422.599997908,
+        "positions": [
+            {
+                "amount": 1200,
+                "last_sale_price": 500,
+                "cost_basis": 514.6478333351,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.000295332,
+        "sharpe": -4.3986842737,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -8.0150499724,
+        "starting_cash": 9432423.599998083,
+        "starting_exposure": 552948,
+        "starting_value": 552948,
+        "trading_days": 13,
+        "transactions": [
+            {
+                "order_id": "44ad48e327b34d49b04baf812ab89aaf",
+                "price": 500.0100000018,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-18T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0187
+    },
+    "2013-01-22T21:00:00.000Z": {
+        "algo_volatility": 0.0119121468,
+        "algorithm_period_return": -0.00118544,
+        "alpha": -0.0454287843,
+        "benchmark_period_return": 0.0465366611,
+        "benchmark_volatility": 0.1142329174,
+        "beta": 0.0067038616,
+        "capital_used": -50478.0000001858,
+        "ending_cash": 9331944.599997722,
+        "ending_exposure": 656201,
+        "ending_value": 656201,
+        "excess_return": -0.01978544,
+        "gross_leverage": 0.065697981,
+        "information": -72.1110838963,
+        "long_exposure": 656201,
+        "long_value": 656201,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.065697981,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-18T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-22T00:00:00.000Z",
+                "id": "b434ab7e09794837aa1608323ef34179",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-22T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-22T00:00:00.000Z",
+                "id": "469926a0525f4f66b0a8b4f82943cc06",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 5722.9999998137,
+        "portfolio_value": 9988145.599997722,
+        "positions": [
+            {
+                "amount": 1300,
+                "last_sale_price": 504.77,
+                "cost_basis": 513.8887692325,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0005733077,
+        "sharpe": -3.3527054801,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -6.0656724849,
+        "starting_cash": 9382422.599997908,
+        "starting_exposure": 600000,
+        "starting_value": 600000,
+        "trading_days": 14,
+        "transactions": [
+            {
+                "order_id": "b434ab7e09794837aa1608323ef34179",
+                "price": 504.7800000019,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-22T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0186
+    },
+    "2013-01-23T21:00:00.000Z": {
+        "algo_volatility": 0.0126317775,
+        "algorithm_period_return": 0.00001501,
+        "alpha": -0.0211361638,
+        "benchmark_period_return": 0.0481142911,
+        "benchmark_volatility": 0.1103165556,
+        "beta": 0.0035307849,
+        "capital_used": -51401.5000000543,
+        "ending_cash": 9280543.099997668,
+        "ending_exposure": 719607,
+        "ending_value": 719607,
+        "excess_return": -0.01858499,
+        "gross_leverage": 0.0719596199,
+        "information": -63.9710384549,
+        "long_exposure": 719607,
+        "long_value": 719607,
+        "longs_count": 1,
+        "max_drawdown": 0.00293694,
+        "max_leverage": 0,
+        "net_leverage": 0.0719596199,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-22T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-23T00:00:00.000Z",
+                "id": "469926a0525f4f66b0a8b4f82943cc06",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-23T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-23T00:00:00.000Z",
+                "id": "b3ef13ce79b74c63840b1a6b4d343c14",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 12004.499999946,
+        "portfolio_value": 10000150.099997668,
+        "positions": [
+            {
+                "amount": 1400,
+                "last_sale_price": 514.005,
+                "cost_basis": 513.897785716,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0012018748,
+        "sharpe": -1.4525138714,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -2.7866233327,
+        "starting_cash": 9331944.599997722,
+        "starting_exposure": 656201,
+        "starting_value": 656201,
+        "trading_days": 15,
+        "transactions": [
+            {
+                "order_id": "469926a0525f4f66b0a8b4f82943cc06",
+                "price": 514.0150000005,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-23T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0186
+    },
+    "2013-01-24T21:00:00.000Z": {
+        "algo_volatility": 0.0373393838,
+        "algorithm_period_return": -0.00887579,
+        "alpha": -0.1895142368,
+        "benchmark_period_return": 0.0481212236,
+        "benchmark_volatility": 0.107308161,
+        "beta": 0.0418348754,
+        "capital_used": -45051.0000000166,
+        "ending_cash": 9235492.09999765,
+        "ending_exposure": 675750,
+        "ending_value": 675750,
+        "excess_return": -0.02767579,
+        "gross_leverage": 0.0681801527,
+        "information": -24.041718728,
+        "long_exposure": 675750,
+        "long_value": 675750,
+        "longs_count": 1,
+        "max_drawdown": 0.0088906666,
+        "max_leverage": 0,
+        "net_leverage": 0.0681801527,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-23T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-24T00:00:00.000Z",
+                "id": "b3ef13ce79b74c63840b1a6b4d343c14",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-24T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-24T00:00:00.000Z",
+                "id": "6467b2d397f640f2a707645d2e500acf",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -88908.0000000168,
+        "portfolio_value": 9911242.09999765,
+        "positions": [
+            {
+                "amount": 1500,
+                "last_sale_price": 450.5,
+                "cost_basis": 509.6719333349,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0088906666,
+        "sharpe": -4.2473569782,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.8998599948,
+        "starting_cash": 9280543.099997668,
+        "starting_exposure": 719607,
+        "starting_value": 719607,
+        "trading_days": 16,
+        "transactions": [
+            {
+                "order_id": "b3ef13ce79b74c63840b1a6b4d343c14",
+                "price": 450.5100000002,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-24T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0188
+    },
+    "2013-01-25T21:00:00.000Z": {
+        "algo_volatility": 0.03638027,
+        "algorithm_period_return": -0.01046889,
+        "alpha": -0.204496262,
+        "benchmark_period_return": 0.0538287487,
+        "benchmark_volatility": 0.1043394037,
+        "beta": 0.0379246216,
+        "capital_used": -43989.0000000236,
+        "ending_cash": 9191503.099997627,
+        "ending_exposure": 703808,
+        "ending_value": 703808,
+        "excess_return": -0.03026889,
+        "gross_leverage": 0.071125404,
+        "information": -26.1987593385,
+        "long_exposure": 703808,
+        "long_value": 703808,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.071125404,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-24T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-25T00:00:00.000Z",
+                "id": "6467b2d397f640f2a707645d2e500acf",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-25T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-25T00:00:00.000Z",
+                "id": "2776d72a1dda43d4b7aa140e147415bd",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -15931.0000000242,
+        "portfolio_value": 9895311.099997627,
+        "positions": [
+            {
+                "amount": 1600,
+                "last_sale_price": 439.88,
+                "cost_basis": 505.3105625015,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0016073666,
+        "sharpe": -4.8099120403,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -4.535032192,
+        "starting_cash": 9235492.09999765,
+        "starting_exposure": 675750,
+        "starting_value": 675750,
+        "trading_days": 17,
+        "transactions": [
+            {
+                "order_id": "6467b2d397f640f2a707645d2e500acf",
+                "price": 439.8900000002,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-25T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0198
+    },
+    "2013-01-28T21:00:00.000Z": {
+        "algo_volatility": 0.0362627427,
+        "algorithm_period_return": -0.00887699,
+        "alpha": -0.1598919626,
+        "benchmark_period_return": 0.0518795645,
+        "benchmark_volatility": 0.1029103471,
+        "beta": 0.0221064636,
+        "capital_used": -44984.0000000572,
+        "ending_cash": 9146519.099997569,
+        "ending_exposure": 764711,
+        "ending_value": 764711,
+        "excess_return": -0.02887699,
+        "gross_leverage": 0.0771560132,
+        "information": -23.456354884,
+        "long_exposure": 764711,
+        "long_value": 764711,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.0771560132,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-25T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-28T00:00:00.000Z",
+                "id": "2776d72a1dda43d4b7aa140e147415bd",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-28T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-28T00:00:00.000Z",
+                "id": "cfaf02d0218947dfa97c7652e3f31527",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 15918.9999999423,
+        "portfolio_value": 9911230.099997569,
+        "positions": [
+            {
+                "amount": 1700,
+                "last_sale_price": 449.83,
+                "cost_basis": 502.0475882367,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0016087417,
+        "sharpe": -3.9786802961,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.7391855235,
+        "starting_cash": 9191503.099997627,
+        "starting_exposure": 703808,
+        "starting_value": 703808,
+        "trading_days": 18,
+        "transactions": [
+            {
+                "order_id": "2776d72a1dda43d4b7aa140e147415bd",
+                "price": 449.8400000006,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-28T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.02
+    },
+    "2013-01-29T21:00:00.000Z": {
+        "algo_volatility": 0.0359425286,
+        "algorithm_period_return": -0.00744229,
+        "alpha": -0.1395259965,
+        "benchmark_period_return": 0.0572504564,
+        "benchmark_volatility": 0.100352739,
+        "beta": 0.0277633596,
+        "capital_used": -45828.0000001101,
+        "ending_cash": 9100691.099997459,
+        "ending_exposure": 824886,
+        "ending_value": 824886,
+        "excess_return": -0.02774229,
+        "gross_leverage": 0.0831071072,
+        "information": -23.8722800947,
+        "long_exposure": 824886,
+        "long_value": 824886,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.0831071072,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-28T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-29T00:00:00.000Z",
+                "id": "cfaf02d0218947dfa97c7652e3f31527",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-29T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-29T00:00:00.000Z",
+                "id": "bd7c93c2cf8a4e7383f7eb163e62bd74",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": 14346.9999998901,
+        "portfolio_value": 9925577.099997459,
+        "positions": [
+            {
+                "amount": 1800,
+                "last_sale_price": 458.27,
+                "cost_basis": 499.616055557,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0014475499,
+        "sharpe": -3.3110710915,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.084284661,
+        "starting_cash": 9146519.099997569,
+        "starting_exposure": 764711,
+        "starting_value": 764711,
+        "trading_days": 19,
+        "transactions": [
+            {
+                "order_id": "cfaf02d0218947dfa97c7652e3f31527",
+                "price": 458.2800000011,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-29T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0203
+    },
+    "2013-01-30T21:00:00.000Z": {
+        "algo_volatility": 0.0349869038,
+        "algorithm_period_return": -0.00770159,
+        "alpha": -0.1335932703,
+        "benchmark_period_return": 0.0531275799,
+        "benchmark_volatility": 0.1006594546,
+        "beta": 0.0250393597,
+        "capital_used": -45684.0000002058,
+        "ending_cash": 9055007.099997254,
+        "ending_exposure": 867977,
+        "ending_value": 867977,
+        "excess_return": -0.02800159,
+        "gross_leverage": 0.0874713686,
+        "information": -21.9066981444,
+        "long_exposure": 867977,
+        "long_value": 867977,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.0874713686,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-29T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-30T00:00:00.000Z",
+                "id": "bd7c93c2cf8a4e7383f7eb163e62bd74",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-30T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-30T00:00:00.000Z",
+                "id": "cece1faf364c432b8fb08868d7aea0f4",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -2593.0000002049,
+        "portfolio_value": 9922984.099997254,
+        "positions": [
+            {
+                "amount": 1900,
+                "last_sale_price": 456.83,
+                "cost_basis": 497.364684212,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0002612443,
+        "sharpe": -3.3538273265,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.0410497942,
+        "starting_cash": 9100691.099997459,
+        "starting_exposure": 824886,
+        "starting_value": 824886,
+        "trading_days": 20,
+        "transactions": [
+            {
+                "order_id": "bd7c93c2cf8a4e7383f7eb163e62bd74",
+                "price": 456.8400000021,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-30T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0203
+    },
+    "2013-01-31T21:00:00.000Z": {
+        "algo_volatility": 0.0341038758,
+        "algorithm_period_return": -0.00795629,
+        "alpha": -0.1293834627,
+        "benchmark_period_return": 0.0504280965,
+        "benchmark_volatility": 0.0997342502,
+        "beta": 0.0234349665,
+        "capital_used": -45550.0000003502,
+        "ending_cash": 9009457.099996904,
+        "ending_exposure": 910980,
+        "ending_value": 910980,
+        "excess_return": -0.02815629,
+        "gross_leverage": 0.0918286151,
+        "information": -20.5434902273,
+        "long_exposure": 910980,
+        "long_value": 910980,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.0918286151,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-30T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-31T00:00:00.000Z",
+                "id": "cece1faf364c432b8fb08868d7aea0f4",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-01-31T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-31T00:00:00.000Z",
+                "id": "e127a01a933d4d74bd95034894519bf5",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-01",
+        "pnl": -2547.0000003502,
+        "portfolio_value": 9920437.099996904,
+        "positions": [
+            {
+                "amount": 2000,
+                "last_sale_price": 455.49,
+                "cost_basis": 495.2714500015,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0002566768,
+        "sharpe": -3.3918573022,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -2.9979102839,
+        "starting_cash": 9055007.099997254,
+        "starting_exposure": 867977,
+        "starting_value": 867977,
+        "trading_days": 21,
+        "transactions": [
+            {
+                "order_id": "cece1faf364c432b8fb08868d7aea0f4",
+                "price": 455.5000000035,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-01-31T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0202
+    },
+    "2013-02-01T21:00:00.000Z": {
+        "algo_volatility": 0.033281975,
+        "algorithm_period_return": -0.00833039,
+        "alpha": -0.1306597865,
+        "benchmark_period_return": 0.0609877412,
+        "benchmark_volatility": 0.1007491659,
+        "beta": 0.021880335,
+        "capital_used": -45363.0000001222,
+        "ending_cash": 8964094.099996781,
+        "ending_exposure": 952602,
+        "ending_value": 952602,
+        "excess_return": -0.02873039,
+        "gross_leverage": 0.0960604208,
+        "information": -23.8569881823,
+        "long_exposure": 952602,
+        "long_value": 952602,
+        "longs_count": 1,
+        "max_drawdown": 0.0104837426,
+        "max_leverage": 0,
+        "net_leverage": 0.0960604208,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-01-31T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-01T00:00:00.000Z",
+                "id": "e127a01a933d4d74bd95034894519bf5",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-02-01T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-01T00:00:00.000Z",
+                "id": "d51702eea5cd456baee1549e26fa1a3b",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-02",
+        "pnl": -3741.0000001229,
+        "portfolio_value": 9916696.099996781,
+        "positions": [
+            {
+                "amount": 2100,
+                "last_sale_price": 453.62,
+                "cost_basis": 493.2885238111,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0003771003,
+        "sharpe": -3.479986716,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.0016772792,
+        "starting_cash": 9009457.099996904,
+        "starting_exposure": 910980,
+        "starting_value": 910980,
+        "trading_days": 22,
+        "transactions": [
+            {
+                "order_id": "e127a01a933d4d74bd95034894519bf5",
+                "price": 453.6300000012,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-01T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0204
+    },
+    "2013-02-04T21:00:00.000Z": {
+        "algo_volatility": 0.0331943152,
+        "algorithm_period_return": -0.01070433,
+        "alpha": -0.1600112284,
+        "benchmark_period_return": 0.0487452744,
+        "benchmark_volatility": 0.109153972,
+        "beta": 0.0442130862,
+        "capital_used": -44232.6000001523,
+        "ending_cash": 8919861.499996629,
+        "ending_exposure": 973095.2000000001,
+        "ending_value": 973095.2000000001,
+        "excess_return": -0.03070433,
+        "gross_leverage": 0.0983624238,
+        "information": -19.6226636624,
+        "long_exposure": 973095.2000000001,
+        "long_value": 973095.2000000001,
+        "longs_count": 1,
+        "max_drawdown": 0.0107191791,
+        "max_leverage": 0,
+        "net_leverage": 0.0983624238,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-02-01T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-04T00:00:00.000Z",
+                "id": "d51702eea5cd456baee1549e26fa1a3b",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-02-04T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-04T00:00:00.000Z",
+                "id": "1283b854d9af424e88e39da299ddae78",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-02",
+        "pnl": -23739.4000001531,
+        "portfolio_value": 9892956.699996628,
+        "positions": [
+            {
+                "amount": 2200,
+                "last_sale_price": 442.316,
+                "cost_basis": 490.9720454561,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.002393882,
+        "sharpe": -4.1357149105,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -3.7126621971,
+        "starting_cash": 8964094.099996781,
+        "starting_exposure": 952602,
+        "starting_value": 952602,
+        "trading_days": 23,
+        "transactions": [
+            {
+                "order_id": "d51702eea5cd456baee1549e26fa1a3b",
+                "price": 442.3260000015,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-04T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.02
+    },
+    "2013-02-05T21:00:00.000Z": {
+        "algo_volatility": 0.0348596888,
+        "algorithm_period_return": -0.00728827,
+        "alpha": -0.139238713,
+        "benchmark_period_return": 0.0596695402,
+        "benchmark_volatility": 0.1101083882,
+        "beta": 0.0698065861,
+        "capital_used": -45785.4000001092,
+        "ending_cash": 8874076.09999652,
+        "ending_exposure": 1053041.2,
+        "ending_value": 1053041.2,
+        "excess_return": -0.02768827,
+        "gross_leverage": 0.1060772396,
+        "information": -20.1681951687,
+        "long_exposure": 1053041.2,
+        "long_value": 1053041.2,
+        "longs_count": 1,
+        "max_drawdown": 0.0107191791,
+        "max_leverage": 0,
+        "net_leverage": 0.1060772396,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-02-04T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-05T00:00:00.000Z",
+                "id": "1283b854d9af424e88e39da299ddae78",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-02-05T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-05T00:00:00.000Z",
+                "id": "a7091674375e4fe6912ee4c33ee62ed6",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-02",
+        "pnl": 34160.5999998916,
+        "portfolio_value": 9927117.29999652,
+        "positions": [
+            {
+                "amount": 2300,
+                "last_sale_price": 457.844,
+                "cost_basis": 489.5321304363,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0034530223,
+        "sharpe": -2.7804848057,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -2.6212905415,
+        "starting_cash": 8919861.499996629,
+        "starting_exposure": 973095.2000000001,
+        "starting_value": 973095.2000000001,
+        "trading_days": 24,
+        "transactions": [
+            {
+                "order_id": "1283b854d9af424e88e39da299ddae78",
+                "price": 457.8540000011,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-05T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0204
+    },
+    "2013-02-06T21:00:00.000Z": {
+        "algo_volatility": 0.0341309307,
+        "algorithm_period_return": -0.00740199,
+        "alpha": -0.135304526,
+        "benchmark_period_return": 0.0602514795,
+        "benchmark_volatility": 0.1079572146,
+        "beta": 0.0692832417,
+        "capital_used": -45736.0000001017,
+        "ending_cash": 8828340.099996418,
+        "ending_exposure": 1097640,
+        "ending_value": 1097640,
+        "excess_return": -0.02740199,
+        "gross_leverage": 0.1105825308,
+        "information": -19.9803216349,
+        "long_exposure": 1097640,
+        "long_value": 1097640,
+        "longs_count": 1,
+        "max_drawdown": 0.0107191791,
+        "max_leverage": 0,
+        "net_leverage": 0.1105825308,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-02-05T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-06T00:00:00.000Z",
+                "id": "a7091674375e4fe6912ee4c33ee62ed6",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-02-06T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-06T00:00:00.000Z",
+                "id": "d94abc922d544dd490547c7b40ba7721",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-02",
+        "pnl": -1137.2000001017,
+        "portfolio_value": 9925980.099996418,
+        "positions": [
+            {
+                "amount": 2400,
+                "last_sale_price": 457.35,
+                "cost_basis": 488.1916250015,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": -0.0001145549,
+        "sharpe": -2.7720327963,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -2.5586897157,
+        "starting_cash": 8874076.09999652,
+        "starting_exposure": 1053041.2,
+        "starting_value": 1053041.2,
+        "trading_days": 25,
+        "transactions": [
+            {
+                "order_id": "a7091674375e4fe6912ee4c33ee62ed6",
+                "price": 457.360000001,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-06T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.02
+    },
+    "2013-02-07T21:00:00.000Z": {
+        "algo_volatility": 0.0346574317,
+        "algorithm_period_return": -0.00479329,
+        "alpha": -0.0979173736,
+        "benchmark_period_return": 0.0583373025,
+        "benchmark_volatility": 0.106569888,
+        "beta": 0.057851506,
+        "capital_used": -46823.0000000739,
+        "ending_cash": 8781517.099996343,
+        "ending_exposure": 1170550,
+        "ending_value": 1170550,
+        "excess_return": -0.02469329,
+        "gross_leverage": 0.1176187809,
+        "information": -17.6551203385,
+        "long_exposure": 1170550,
+        "long_value": 1170550,
+        "longs_count": 1,
+        "max_drawdown": 0.0107191791,
+        "max_leverage": 0,
+        "net_leverage": 0.1176187809,
+        "orders": [
+            {
+                "status": 1,
+                "limit_reached": false,
+                "created": "2013-02-06T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": 1,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-07T00:00:00.000Z",
+                "id": "d94abc922d544dd490547c7b40ba7721",
+                "filled": 100
+            },
+            {
+                "status": 0,
+                "limit_reached": false,
+                "created": "2013-02-07T00:00:00.000Z",
+                "stop": null,
+                "reason": null,
+                "stop_reached": false,
+                "commission": null,
+                "amount": 100,
+                "limit": null,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-07T00:00:00.000Z",
+                "id": "77214c1bc2d34f1c80cf65c8f22cde92",
+                "filled": 0
+            }
+        ],
+        "period_label": "2013-02",
+        "pnl": 26086.9999999255,
+        "portfolio_value": 9952067.099996343,
+        "positions": [
+            {
+                "amount": 2500,
+                "last_sale_price": 468.22,
+                "cost_basis": 487.3931600015,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                }
+            }
+        ],
+        "returns": 0.0026281536,
+        "sharpe": -1.9146843344,
+        "short_exposure": 0,
+        "short_value": 0,
+        "shorts_count": 0,
+        "sortino": -1.7945877077,
+        "starting_cash": 8828340.099996418,
+        "starting_exposure": 1097640,
+        "starting_value": 1097640,
+        "trading_days": 26,
+        "transactions": [
+            {
+                "order_id": "d94abc922d544dd490547c7b40ba7721",
+                "price": 468.2300000007,
+                "commission": 1,
+                "amount": 100,
+                "sid": {
+                    "asset_name": "Apple Inc",
+                    "end_date": "2016-05-18T00:00:00.000Z",
+                    "first_traded": null,
+                    "security_end_date": "2016-05-18T00:00:00.000Z",
+                    "security_start_date": "1980-12-12T00:00:00.000Z",
+                    "start_date": "1980-12-12T00:00:00.000Z"
+                },
+                "dt": "2013-02-07T00:00:00.000Z"
+            }
+        ],
+        "treasury_period_return": 0.0199
+    }
+}

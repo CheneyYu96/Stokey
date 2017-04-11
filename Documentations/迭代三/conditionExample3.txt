@@ -1,0 +1,22 @@
+&&name
+up
+
+&&description
+when a stock continue rising for x days
+
+&&variable
+days=5
+
+&&const
+from zipline.api import symbol
+
+&&compute
+$days_data = data.history(symbol($stock), 'close', $days, '1d')
+$boolVar = True
+for i in range($days-1):
+        if $days_data[-i-2] > $days_data[-i-1]:
+            $boolVar = False
+            break
+
+&&condition
+$boolVar

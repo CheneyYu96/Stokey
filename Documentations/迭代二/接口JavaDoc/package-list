@@ -1,0 +1,4 @@
+org.xeon.stockey.businessLogicService.activationService
+org.xeon.stockey.businessLogicService.stockAccessService
+org.xeon.stockey.businessLogicService.stockAnalysisService
+org.xeon.stockey.dataService

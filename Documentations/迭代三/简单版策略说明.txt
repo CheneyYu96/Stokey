@@ -1,0 +1,65 @@
+每个条件和动作都可以自行拓展添加，我们可以自带一些常用的
+需要解决的问题：变量名重复（怎么提取都是问题= =），拼接代码，合并import
+
+为每个trigger指定一支股票，或者一组股票
+
+* 条件：可用and, or, not联结，不可在条件体内嵌套其它语句
+** 可扩展：用户可以自定义，格式
+*** 名字：可以自定义条件名字
+*** 描述：可以自定义动作描述，也可以在代码中加入注释
+*** 参数：可以自定义需要参数，之后在常量定义区域和计算区域出现的会被实际后来输入的替换
+*** 常量定义区域：（以后会直接塞到initialize方法里面，可定义函数，可import部分模块）
+*** 计算区域：计算条件表达式中要用到的变量
+*** 条件表达式：符合python条件表达式的要求 
+
+* 动作：可拼接(自排顺序)，可嵌套其他if语句
+** 可拓展：用户可以自定义，格式
+*** 名字：可以自定义动作名字
+*** 描述：可以自定义动作描述，也可以在代码中加入注释
+*** 参数：可以自定义需要参数，之后在常量定义区域和计算区域出现的会被实际后来输入的替换
+*** 常量定义区域：（以后会直接塞到initialize方法里面，可定义函数，可import部分模块）
+*** 计算区域：变量替换后塞到handle_data里面
+
+******************************* condition grammar ******************************
+
+&&name # &&开头表示一个区域标识，这里是名字, #后面是注释
+mva_compare # 一个区域标识开始，直到文件结束或另一个区域标识之间是区域定义，name区域只识别第一行，且开头不为空，只含a-zA-Z0-9以及下划线，空格或换行表示结束
+
+&&description # 描述
+to define a condition where short_mavg < long_mavg # 可以任意字符任意行
+
+&&variable # 要被替换的变量
+max_share, short_term=9, long_term=16 # 变量之间用逗号隔开，可以出现大小写数字下划线，开头不能是数字；变量名不能是stock（默认使用）；变量名后加=号表示默认值
+
+&&const # 常量定义区域，请正确填写python代码（以后出现在initialize中）
+from zipline.api import order, symbol
+context.stock1 = symbol($stock) # $stock表示应用该策略的股票, 生成代码时候会替换成相应的股票代码，相当于stock是默认的变量
+context.max_shares = $max_share # $跟着变量名，表示要替换成实际输入
+def buy_buy_buy():
+    order(context.stock1, context.max_shares)
+
+&&compute # 计算条件表达式中要用到的变量的值,请正确填写python代码（以后出现在handle_data中）
+short_avg = data.history(context.stock1, 'close', $short_term, '1d').mean()
+long_avg = data.history(context.stock1, 'close', $long_term, '1d').mean()
+
+&&condition # 条件表达式
+short_avg < long_avg
+
+******************************* action example ******************************
+
+&&name: # &&开头表示一个区域标识，这里是名字, #后面是注释
+order_to_targetxxx # 一个区域标识开始，直到文件结束或另一个区域标识之间是区域定义，这行表示名字是order_to_targetxxx
+
+&&description: # 描述
+to buy the stock to a specified number
+
+&&variable # 要被替换的变量
+limit_num
+
+&&const # 常量定义区域，请正确填写python代码（以后出现在initialize中）
+from zipline.api import order, symbol
+def buy_buy_buy():
+    order_target(symbol($stock), $limit_num)
+
+&&compute # 请正确填写python代码（以后出现在条件成立时候的区域中）
+buy_buy_buy()

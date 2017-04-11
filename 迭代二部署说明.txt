@@ -1,0 +1,10 @@
+1.将StockEy_v2.jar和StockData.ser，SelectedStock.ser放在同一文件夹下
+（这两个文件可以在本项目stockey\release\StockEy_v2文件夹中找到）
+
+2.确保运行设备安装有JRE，版本在1.8及以上
+
+3.请确保您有网络连接
+
+4.运行StockEy_v2.jar即可 
+
+5.文档（计划文档，需求规格文档，接口JavaDoc，测试文档等）在Document/迭代二 文件夹中

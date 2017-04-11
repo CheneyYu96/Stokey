@@ -1,0 +1,18 @@
+&&name
+continue_drop
+
+&&description
+when a stock continue dropping for x days
+
+&&variable
+days=5
+
+&&const
+from zipline import symbol
+context.stock1 = symbol($stock)
+
+&&compute
+$days_data = data.history(context.stock1, 'close', $short_term, '1d')
+
+&&condition
+$short_avg < $long_avg

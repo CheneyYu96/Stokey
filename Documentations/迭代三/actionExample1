@@ -1,0 +1,14 @@
+&&name
+buy
+
+&&description
+buy a specified stock x shares
+
+&&variable
+shares
+
+&&const
+from zipline.api import symbol, order
+
+&&compute
+order(symbol($stock), $shares)

@@ -1,0 +1,23 @@
+who：倪安松
+when：第2周
+what：完成大盘数据展示的用例描述UC2，完成体系结构设计，完成项目分包和构建，完成StockDataService接口
+problem：没有找到很好的办法解决数据实时性的问题
+todo：下周完成数据层的代码构建，包括实现所有接口和初步的数据存取
+
+who: 吴嘉荣
+when: 第2周
+what: 完成股票列表用例描述，完成stockAccess包的接口编写
+problem: 没有完成stockAccess包的实现，没有来得及和数据层商量一些接口规范
+todo: 预计下周完成逻辑层的stockAccess部分，并且和数据、UI部分完成对接
+
+who: 徐朱峰
+when: 第2周
+what: 编写体系结构文档，体系结构开发包图，UI原型设计，构建文档模版，文档美化排版
+problem: 由于设计原型图花了大量时间，JavaFx还没学
+todo: 学习JavaFx，尝试与Echarts对接，完成UI原型设计
+
+who: 余旻晨
+when: 第2周
+what: 完成项目启动文档、部分用例文档、需求规格说明文档的编写
+problem: 需求规格说明文档的假设和依赖部分需要后续补充
+todo:下周进行代码编写

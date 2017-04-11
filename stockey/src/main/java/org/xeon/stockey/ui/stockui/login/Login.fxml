@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="299.0" styleClass="background" stylesheets="@../../css/login_back.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.login.LoginController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="57.0" prefHeight="286.0" prefWidth="248.0">
+         <children>
+            <Label alignment="CENTER" layoutY="57.0" prefHeight="37.0" prefWidth="60.0" text="用户名:" textFill="#f8f3f3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="140.0" prefHeight="37.0" prefWidth="60.0" text="密码:" textFill="#f8f3f3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" layoutX="74.0" layoutY="62.0" />
+            <TextField fx:id="passWord" layoutX="74.0" layoutY="145.0" />
+            <Button layoutX="47.0" layoutY="218.0" mnemonicParsing="false" onAction="#login" text="登录">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="158.0" layoutY="218.0" mnemonicParsing="false" onAction="#exit" text="取消">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="99.0" layoutY="20.0" prefHeight="37.0" prefWidth="102.0" text="登录" textFill="#fcf2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="tipsLabel" layoutX="80.0" layoutY="358.0" prefHeight="20.0" prefWidth="140.0" text="还没账号?注册一个!" textFill="#f5f2f2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="arrowLabel" layoutX="123.0" layoutY="386.0" onMouseClicked="#signup" prefHeight="27.0" prefWidth="54.0" styleClass="label-arrow-right" />
+      <Label layoutX="264.0" layoutY="10.0" onMouseClicked="#exit" prefHeight="20.0" prefWidth="20.0" styleClass="label-close" stylesheets="@../../css/background.css" />
+   </children>
+</AnchorPane>

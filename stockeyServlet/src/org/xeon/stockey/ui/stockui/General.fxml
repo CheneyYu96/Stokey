@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="114.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+           <Label layoutX="367.0" layoutY="21.0" prefHeight="72.0" prefWidth="319.0" text="Label" AnchorPane.bottomAnchor="21.0" AnchorPane.topAnchor="21.0" />
+            <Label layoutX="1096.0" layoutY="31.0" onMouseClicked="#minimizeStage" prefHeight="35.0" prefWidth="35.0" styleClass="label-xiao" />
+            <Label layoutX="1145.0" layoutY="31.0" onMouseClicked="#closeStage" prefHeight="35.0" prefWidth="35.0" styleClass="label-close" />
+         </children></AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="686.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-1.0" layoutY="69.0">
+               <children>
+                  <Label layoutY="69.0" onMouseClicked="#jumpToMarket" prefHeight="62.0" prefWidth="306.0" styleClass="label-market" AnchorPane.bottomAnchor="555.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="69.0" />
+                  <Label layoutY="131.0" onMouseClicked="#jumpToSelection" prefHeight="62.0" prefWidth="306.0" styleClass="label-selection" AnchorPane.bottomAnchor="493.0" AnchorPane.topAnchor="131.0" />
+                  <Label layoutX="-1.0" layoutY="193.0" prefHeight="62.0" prefWidth="306.0" styleClass="label-schemes" AnchorPane.bottomAnchor="431.0" AnchorPane.topAnchor="193.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="686.0" prefWidth="703.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

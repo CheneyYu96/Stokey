@@ -1,0 +1,6 @@
+1.将StockEy_v1.jar和StockData.ser放在同一文件夹下
+（这两个文件可以在本项目stockey\release\StockEy_v1文件夹中找到）
+
+2.确保运行设备安装有JRE，版本在1.8及以上
+
+3.运行StockEy_v1.jar即可 

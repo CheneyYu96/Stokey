@@ -1,0 +1,13 @@
+http请求格式：
+URL: 104.236.174.190:5050
+方法：POST
+头部(Header)：'Content-Type':'application/json'
+参数(entity-body)：JSON（格式：{"begin_date":"2012-1-6","end_date":"2013-2-3","capital":"10000002","code":"..."}）
+返回 JSON（格式：{"日期1":{..., "portfolio_value":"10000002", ...}, 
+                  "日期2":{}, 
+                  ..., 
+                  "日期N":{}}）
+
+每个日期对应的JSON里面的属性还没研究清楚，"portfolio_value"应该是资产的意思，可以用来画折线图
+
+作为参数的Python代码可以用stockey/stockey-zipline/web-server/hello.py，这个里面用到了anyquant的股票，我测试时候没有问题

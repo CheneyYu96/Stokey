@@ -1,0 +1,27 @@
+Required:
+{ "recipes": [ Recipe1, Recipe2 ], "stockCode": [code1, code2]}
+
+Recipe =
+{
+  "condition": Condition1,
+  "action": Action1
+}
+
+Condition =
+{
+  "type": "and" | "or" | "not" | "single",
+  "condition1":   Condition1 // if type != "single"
+                | {"condition_id": Identifier1, "args": [Arg1, Arg2, ...]} // if type == "single"
+  "condition2": Condition2
+}
+
+Action =
+{
+  "type": "list" | "single",
+  "value":   [Action1, Action2, Action3, ...] // if type == "list"
+  	   | {"action_id": Identifier1, "args": [Arg1, Arg2, ...]} // if type == "single"
+}
+
+Identifier = userStoreID + name // example: "000004name"
+
+Arg = "xxx"

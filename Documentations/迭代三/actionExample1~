@@ -1,0 +1,15 @@
+&&name
+buy_by_share
+
+&&description
+buy a specified stock x shares
+
+&&variable
+shares
+
+&&const
+from zipline import symbol
+context.stock1 = symbol($stock)
+
+&&compute
+order

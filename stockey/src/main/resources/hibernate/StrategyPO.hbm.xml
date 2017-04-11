@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-20 21:42:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.xeon.stockey.po.StrategyPO" table="STRATEGYPO">
+        <id name="strategyID" type="int" access="field">
+            <column name="STRATEGYID" />
+            <generator class="increment" />
+        </id>
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        <property name="userStoreID">
+            <column name="USERID" />
+        </property>
+        <property name="name">
+            <column name="NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

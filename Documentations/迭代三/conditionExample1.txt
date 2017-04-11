@@ -1,0 +1,18 @@
+&&name
+slide
+
+&&description
+when short moving average < long moving average
+
+&&variable
+short_term=9, long_term=16
+
+&&const
+from zipline.api import symbol
+
+&&compute
+$short_avg = data.history(symbol($stock), 'close', $short_term, '1d').mean()
+$long_avg = data.history(symbol($stock), 'close', $long_term, '1d').mean()
+
+&&condition
+$short_avg < $long_avg

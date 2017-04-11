@@ -1,0 +1,7 @@
+who: 倪安松，吴嘉荣，徐朱峰，余旻晨
+when: 第4周
+what: 讨论迭代二主要计划
+      1. 由于要适应Applet和迭代三的计划，界面决定用Swing进行重写（之前用的JavaFX）
+	  2. 分析迭代二需要的大体功能、实现样式
+problem: Swing重构需要一定时间
+todo: JFreeChart学习，界面原型

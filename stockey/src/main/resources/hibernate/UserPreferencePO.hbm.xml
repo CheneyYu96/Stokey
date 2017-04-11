@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-20 21:42:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.xeon.stockey.po.UserPreferencePO" table="USERPREFERENCEPO">
+        <composite-id>
+            <key-property name="userStoreID">
+                <column name="USERID" />
+            </key-property>
+            <key-property name="stockCode">
+                <column name="STOCKCODE" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

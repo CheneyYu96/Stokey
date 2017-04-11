@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="567.0" prefWidth="244.0" stylesheets="@../../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.selection.StockListController">
+
+         <children>
+            <Button layoutX="33.0" layoutY="7.0" mnemonicParsing="false" onAction="#toList" prefHeight="28.0" prefWidth="81.0" text="列表显示" />
+            <Button layoutX="141.0" layoutY="7.0" mnemonicParsing="false" onAction="#toStatistic" prefHeight="28.0" prefWidth="81.0" text="统计分析" />
+            <AnchorPane layoutX="8.0" layoutY="44.0" prefHeight="523.0" prefWidth="758.0">
+               <children>
+                  <StackPane layoutX="36.0" layoutY="42.0" prefHeight="440.0" prefWidth="687.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <TableView fx:id="stockTable" editable="true" onMouseClicked="#jumpToStock" prefHeight="433.0" prefWidth="699.0">
+                          <columns>
+                            <TableColumn fx:id="stockCode" prefWidth="180.0" text="股票代码" />
+                            <TableColumn fx:id="name" prefWidth="150.0" text="股票名称" />
+                              <TableColumn fx:id="open" prefWidth="200.0" text="开盘价" />
+                              <TableColumn fx:id="close" minWidth="0.0" prefWidth="200.0" text="收盘价" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </StackPane>
+                  <Label alignment="CENTER" layoutX="179.0" prefHeight="47.0" prefWidth="401.0" text="股票列表">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+</AnchorPane>

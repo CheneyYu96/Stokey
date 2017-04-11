@@ -1,0 +1,19 @@
+.background{
+    -fx-background-image : url("image/login_background.png");
+    -fx-background-size: cover;
+}
+
+.label-tips{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.label-arrow-right{
+    -fx-background-image: url("image/button/arrow_right.png");
+    -fx-background-size: cover;
+}
+
+.label-arrow-left{
+    -fx-background-image: url("image/button/arrow_left.png");
+    -fx-background-size: cover;
+}

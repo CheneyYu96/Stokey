@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" styleClass="background" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.StockShowController">
+   <top>
+      <AnchorPane prefHeight="94.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+           <Label layoutX="216.0" layoutY="15.0" prefHeight="65.0" prefWidth="240.0" styleClass="label-selection" AnchorPane.bottomAnchor="14.0" AnchorPane.topAnchor="15.0" />
+             <Label layoutX="910.0" layoutY="25.0" minHeight="-Infinity" onMouseClicked="#minimizeStage" prefHeight="4.0" prefWidth="28.0" styleClass="label-xiao" />
+            <Label layoutX="953.0" layoutY="14.0" onMouseClicked="#closeStage" prefHeight="25.0" prefWidth="25.0" styleClass="label-close" />
+         </children></AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="566.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="80.0" prefHeight="231.0" prefWidth="235.0" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <children>
+                  <Label layoutY="69.0" onMouseClicked="#jumpToMarket" prefHeight="50.0" prefWidth="243.0" styleClass="label-market" AnchorPane.bottomAnchor="555.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="69.0" />
+                  <Label layoutY="131.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#jumpToSelection" prefHeight="50.0" prefWidth="243.0" styleClass="label-selection-selected" AnchorPane.bottomAnchor="493.0" AnchorPane.topAnchor="131.0" />
+                  <Label layoutX="-1.0" layoutY="193.0" prefHeight="50.0" prefWidth="254.0" styleClass="label-schemes" AnchorPane.bottomAnchor="431.0" AnchorPane.topAnchor="193.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="506.0" prefWidth="745.0" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="135.0" layoutY="13.0" mnemonicParsing="false" onAction="#showChart" text="show chart" />
+            <Button layoutX="34.0" layoutY="13.0" mnemonicParsing="false" onAction="#showForm" text="show form" />
+            <AnchorPane layoutX="-1.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="520.0" prefWidth="751.0">
+               <children>
+                  <Button layoutX="487.0" layoutY="462.0" mnemonicParsing="false" onAction="#showFilterDialog" prefHeight="28.0" prefWidth="98.0" text="设置过滤条件" AnchorPane.leftAnchor="487.0" AnchorPane.rightAnchor="164.0" />
+                  <Button layoutX="613.0" layoutY="462.0" mnemonicParsing="false" onAction="#showBeginInfo" prefHeight="28.0" prefWidth="105.0" text="未筛选数据" AnchorPane.leftAnchor="613.0" AnchorPane.rightAnchor="39.0" />
+                  <StackPane layoutX="39.0" layoutY="67.0" prefHeight="382.0" prefWidth="673.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="67.0">
+                     <children>
+                        <TableView fx:id="dailyTable" editable="true" prefHeight="407.0" prefWidth="683.0">
+                          <columns>
+                            <TableColumn fx:id="date" prefWidth="113.0" text="日期" />
+                            <TableColumn fx:id="open" prefWidth="68.0" text="开盘价" />
+                              <TableColumn fx:id="max" minWidth="2.0" prefWidth="81.0" text="最高价" />
+                              <TableColumn fx:id="close" minWidth="0.0" prefWidth="82.0" text="收盘价" />
+                              <TableColumn fx:id="min" minWidth="4.0" prefWidth="101.0" text="最低价" />
+                              <TableColumn fx:id="volumn" minWidth="0.0" prefWidth="106.0" text="交易量（股）" />
+                              <TableColumn fx:id="turnover" prefWidth="124.0" text="交易金额（元）" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </StackPane>
+                  <Label fx:id="idLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="719.0" textAlignment="CENTER" textFill="#2c0c0c" textOverrun="CLIP">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

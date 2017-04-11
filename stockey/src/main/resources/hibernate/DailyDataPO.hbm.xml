@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-20 21:42:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.xeon.stockey.po.DailyDataPO" table="DAILYDATAPO">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="theDate" type="java.util.Calendar">
+            <column name="THEDATE" />
+        </property>
+        <property name="close" type="double">
+            <column name="CLOSE" />
+        </property>
+        <property name="high" type="double">
+            <column name="HIGH" />
+        </property>
+        <property name="low" type="double">
+            <column name="LOW" />
+        </property>
+        <property name="open" type="double">
+            <column name="OPEN" />
+        </property>
+        <property name="volumn" type="double">
+            <column name="VOLUMN" />
+        </property>
+        <property name="turnover" type="double">
+            <column name="TURNOVER" />
+        </property>
+        <property name="adjPrice" type="double">
+            <column name="ADJPRICE" />
+        </property>
+        <property name="pe" type="double">
+            <column name="PE" />
+        </property>
+        <property name="pb" type="double">
+            <column name="PB" />
+        </property>
+    </class>
+</hibernate-mapping>

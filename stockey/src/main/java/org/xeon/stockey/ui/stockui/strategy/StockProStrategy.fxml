@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.strategy.StockProStrategyController">
+   <children>
+      <TextArea fx:id="code" layoutX="52.0" layoutY="110.0" prefHeight="322.0" prefWidth="641.0" promptText="&#10;   &#9;&#9;&#9;&#9;&#9; &#9;pass" text="def initialize(context):&#10;    &quot;&quot;&quot;&#10;    实现初始化函数&#10;    &quot;&quot;&quot;&#10;    pass&#10;&#10;&#10;&#10;def handle_data(context, data):&#10;    &quot;&quot;&quot;&#10;    在每次交易中调用，逻辑主要实现部分&#10;    &quot;&quot;&quot;&#10;    pass&#10;&#10;" />
+      <Label layoutX="26.0" layoutY="70.0" prefHeight="30.0" prefWidth="122.0" text="实现代码:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="466.0" prefHeight="45.0" prefWidth="522.0" />
+      <Button layoutX="595.0" layoutY="481.0" mnemonicParsing="false" onAction="#connect2Strategy" prefHeight="30.0" prefWidth="98.0" text="提交测试" />
+      <AnchorPane prefHeight="53.0" prefWidth="745.0">
+         <children>
+            <DatePicker fx:id="endDate" layoutX="344.0" layoutY="14.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="27.0" layoutY="18.0" text="起始时间">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="18.0" text="结束时间">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="beginDate" layoutX="101.0" layoutY="14.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="512.0" layoutY="18.0" text="总金额">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="701.0" layoutY="18.0" prefHeight="20.0" prefWidth="21.0" text="￥">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalMoney" layoutX="568.0" layoutY="14.0" prefHeight="27.0" prefWidth="122.0" promptText="请输入金额" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

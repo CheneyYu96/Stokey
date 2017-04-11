@@ -1,0 +1,23 @@
+who: 倪安松
+when: 第四周
+what: 将数据获取从全部变成按照要求的十个以内
+problem: 缺少有效的本地数据更新方式
+todo: 探寻网络和本地数据并行获取的策略和方式
+
+who: 吴嘉荣
+when: 第四周
+what: 补充部署说明
+problem: 不清楚迭代二中逻辑层需要做什么 =_=
+todo: 找出迭代二中逻辑层的任务，或者开始着手迭代三的开发
+
+who: 徐朱峰
+when: 第四周
+what: 利用Swing重构界面（原本使用JavaFx），制作原型图
+problem: Swing的Table太丑，暂时还没有复写
+todo: 完成Swing的重构，与逻辑层对接，并且添加图表
+
+who: 余旻晨
+when: 第4周
+what: 重写label的swing组建，搭建读取配置文件的框架
+problem: 由javafx转swing在细节处理上可能遇到问题
+todo:后续进行用swing对原界面的重写以及图表的开发

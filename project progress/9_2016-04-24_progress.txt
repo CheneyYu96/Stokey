@@ -1,0 +1,23 @@
+who: 余旻晨
+when: 第九周
+what: 讨论迭代三功能要求
+problem: 关于是否开发web端有争议
+todo: 下周开始迭代三开发
+
+who: 吴嘉荣
+when: 第九周
+what: 讨论迭代三功能要求
+problem: 关于是否开发web端有争议，迭代三要具体做哪些功能和它们的优先级还没决定
+todo: 进一步讨论，明确迭代三需求
+
+who: 徐朱峰
+when：第九周
+what：讨论迭代三功能要求
+problem：要参加比赛，下周暂时不能参加大作业
+todo：学习html+css+js框架
+
+who：倪安松
+when：第九周
+what：讨论迭代三功能要求
+problem：web端的优先级有待商榷，一些技术细节需要去估算成本
+todo：进一步讨论

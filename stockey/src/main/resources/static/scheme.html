@@ -1,0 +1,496 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Sun May 22 2016 15:34:45 GMT+0000 (UTC) -->
+<html data-wf-site="573dfa84ee15ab7f704bce71" data-wf-page="573dfa84ee15ab7f704bce80" data-wf-status='1'
+      data-wf-domain="alandelips-first-site.webflow.io">
+<head>
+    <meta charset="utf-8">
+    <title>Scheme</title>
+    <meta property="og:title" content="Scheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/webfont/1.6.24/webfontloader.js"></script>
+    <script>WebFont.load({
+        google: {
+            families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+        }
+    });</script>
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/scheme-button.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css"/>
+    <link rel="stylesheet" href="css/datepicker.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/widgets.css"/>
+    <script src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/webclip.png">
+</head>
+<body>
+<!--等待动画-->
+<div id="load" style="background: rgba(0, 0, 0, 0.57);z-index:20;position:fixed;display: none;">
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>G</div>
+    <div>N</div>
+    <div>I</div>
+    <div>D</div>
+    <div>A</div>
+    <div>O</div>
+    <div>L</div>
+</div>
+
+<!--价格策略设置-->
+<div id="price-ifthen-wrapper" class="ifthen-wrapper" style="display:none;">
+    <div id="price-if" class="price-if-condition float-background">
+        <h3 id="price-if-title">股价滑动IF</h3>
+        <h5>选择指标运行条件</h5>
+        <hr/>
+        <div>与其他条件的关系</div>
+        <select id="price-select" class="w-select">
+            <option>并且 AND</option>
+            <option>或者 OR</option>
+            <option>非 NOT</option>
+        </select>
+
+        <div>短期滑动天数设置</div>
+        <input id="price-if-close" class="w-input" placeholder="输入期望..天">
+
+        <div>长期滑动天数设置</div>
+        <input id="price-if-open" class="w-input" placeholder="输入期望..天">
+    </div>
+    <div id="price-then" class="price-then-condition float-background">
+        <h3 id="price-then-title">股价滑动THEN</h3>
+        <h5>选择指标运行结果</h5>
+        <hr/>
+        <ul>
+            <li id="price-then-buy">买入策略</li>
+            <li id="price-then-sell">卖出策略</li>
+        </ul>
+        <hr/>
+        <h5 id="price-then-scheme-title">策略运行指标</h5>
+
+        <div id="price-then-scheme" class="price-then-scheme" style="display:none">
+            <div id="price-then-scheme-item">买入股数</div>
+            <input id="price-scheme-input" class="w-input" placeholder="输入期望..股数">
+        </div>
+        <button onclick="saveSlideCondition()" class="w-button" style="float:right;">
+            保存条件
+        </button>
+        <button id="price-cancel" class="w-button" style="float:right;margin-right: 10px">
+            取消
+        </button>
+    </div>
+</div>
+
+<!--上升策略设置-->
+<div id="up-ifthen-wrapper" class="ifthen-wrapper" style="display:none;">
+    <div id="up-if" class="price-if-condition float-background">
+        <h3 id="up-if-title">连续上升情形IF</h3>
+        <h5>选择指标运行条件</h5>
+        <hr/>
+        <div>与其他条件的关系</div>
+        <select id="up-select" class="w-select">
+            <option>并且 AND</option>
+            <option>或者 OR</option>
+            <option>非 NOT</option>
+        </select>
+
+        <div>连续上升天数</div>
+        <input id="up-if-day" class="w-input" placeholder="输入期望..天">
+    </div>
+    <div id="up-then" class="price-then-condition float-background">
+        <h3 id="up-then-title">连续上升情形THEN</h3>
+        <h5>选择指标运行结果</h5>
+        <hr/>
+        <ul>
+            <li id="up-then-buy">买入策略</li>
+            <li id="up-then-sell">卖出策略</li>
+        </ul>
+        <hr/>
+        <h5 id="up-then-scheme-title">策略运行指标</h5>
+
+        <div id="up-then-scheme" class="price-then-scheme" style="display:none">
+            <div id="up-then-scheme-item">买入股数</div>
+            <input id="up-scheme-input" class="w-input" placeholder="输入期望..股数">
+        </div>
+        <button onclick="saveUpCondition()" class="w-button" style="float:right;">
+            保存条件
+        </button>
+        <button id="up-cancel" class="w-button" style="float:right;margin-right: 10px">
+            取消
+        </button>
+    </div>
+</div>
+
+<!--下降策略设置-->
+<div id="down-ifthen-wrapper" class="ifthen-wrapper" style="display:none;">
+    <div id="down-if" class="price-if-condition float-background">
+        <h3 id="down-if-title">连续下降情形IF</h3>
+        <h5>选择指标运行条件</h5>
+        <hr/>
+        <div>与其他条件的关系</div>
+        <select id="down-select" class="w-select">
+            <option>并且 AND</option>
+            <option>或者 OR</option>
+            <option>非 NOT</option>
+        </select>
+
+        <div>连续下降天数</div>
+        <input id="down-if-day" class="w-input" placeholder="输入期望..天">
+    </div>
+    <div id="down-then" class="price-then-condition float-background">
+        <h3 id="down-then-title">连续下降情形THEN</h3>
+        <h5>选择指标运行结果</h5>
+        <hr/>
+        <ul>
+            <li id="down-then-buy">买入策略</li>
+            <li id="down-then-sell">卖出策略</li>
+        </ul>
+        <hr/>
+        <h5 id="down-then-scheme-title">策略运行指标</h5>
+
+        <div id="down-then-scheme" class="price-then-scheme" style="display:none">
+            <div id="down-then-scheme-item">买入股数</div>
+            <input id="down-scheme-input" class="w-input" placeholder="输入期望..股数">
+        </div>
+        <button onclick="saveDownCondition()" class="w-button" style="float:right;">
+            保存条件
+        </button>
+        <button id="down-cancel" class="w-button" style="float:right;margin-right: 10px">
+            取消
+        </button>
+    </div>
+</div>
+
+
+<div class="wrapper contact-overlay">
+    <a onclick="closeLogin()" class="contact-overlay-close"><font color="white" size="5sp">✕</font></a>
+
+    <div class="container">
+        <h1 id="logining" style="display: none"><font color="white">登录中...</font></h1>
+
+        <h1 id="signing" style="display: none"><font color="white">注册中...</font></h1>
+
+        <form class="form">
+            <ul class="tab-group">
+                <li id="login-tab" class="tab active"><a onclick="tabLogin()">登录</a></li>
+                <li id="signup-tab" class="tab"><a onclick="tabSignup()">注册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="login">
+                    <h1><font color="white">Welcome</font></h1>
+
+                    <form class="form">
+                        <input id="username" type="text" placeholder="用户名">
+                        <input id="password" type="password" placeholder="密码">
+                        <button id="login-button" type="submit">登录</button>
+                    </form>
+                </div>
+                <div id="signup">
+                    <h1><font color="white">加入StockEy</font></h1>
+
+                    <form class="form">
+                        <input id="signup_username" type="text" placeholder="用户名">
+                        <input id="signup_password" type="password" placeholder="密码">
+                        <input id="confirm_password" type="password" placeholder="确认密码">
+                        <input id="signup_email" type="email" placeholder="邮箱">
+                        <button type="submit" id="sign-button">注册</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="w-section hero-section blog-hero">
+    <div class="hero-overlay"></div>
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" class="w-nav nav">
+        <div class="w-container" style="height:60px"><a href="./" class="w-nav-brand">
+            <div class="logo-text"><strong>STOCKEY</strong></div>
+        </a>
+            <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
+                <a href="./" class="w-nav-link nav-link">Home</a>
+                <a href="./market.html" class="w-nav-link nav-link">Market</a>
+                <a href="./selections.html" class="w-nav-link nav-link">Selections</a>
+                <a href="./scheme.html" class="w-nav-link nav-link">scheme</a>
+                <a id="login-signup-button" href="javascript:showLogin()" class="w-nav-link nav-link contact">
+                    Login/Sign Up
+                </a>
+
+                <div class="w-nav-link nav-link">
+                    <div class="user-menu-toggle">
+                        <div>
+                            <img class="profile-img" src="images/1.jpg">
+
+                            <div id="user-title" style="padding-left:8px;float: right;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User menu -->
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <div class="profile-img"
+                                 style="background-image:url(images/1.jpg)">
+                            </div>
+                            <h3 id="user-name">Alan Delip</h3>
+
+                        </div>
+                        <div class="menu-nav">
+                            <li onclick="link('./selections.html')"><span></span>My Selections</li>
+                            <li onclick="link('./scheme.html')"><span></span>My Schemes</li>
+                            <li onclick="logout()"><span></span>Sign Out</li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-nav-button menu-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+    <h1>Scheme</h1>
+    <h5 class="myh5">StockEy利用了Zipline使用实时策略运行历史数据，让每一位用户理解更深刻！</h5>
+</div>
+<div id="selections-rows" class="w-section section">
+    <div style="horiz-align: center;text-align: center">
+        <img src="images/logo.png">
+
+        <h3>请先登录</h3>
+    </div>
+</div>
+<div id="scheme-main" class="w-clearfix w-section section" style="display: none;margin:20px;padding:0">
+    <div class="scheme-nav float-background">
+        <ul>
+            <div class="nav-title">
+                <p style="margin: 0;font-size: 20px">配置面板</p>
+
+                <p style="margin: 0;font-size: 12px;">Setting Board</p>
+            </div>
+            <li id="basic-button">基础设置</li>
+            <hr/>
+            <li id="if-button">条件指标</li>
+            <hr/>
+            <li id="advance-button">进阶模式</li>
+        </ul>
+    </div>
+    <div id="basic-setting" class="scheme-setting float-background">
+        <h3 style="margin-bottom: 0;">基础设置</h3>
+
+        <p style="font-size: 14px;margin-top: 0;padding-top: 0;">Basic Settings</p>
+        <hr/>
+        <div class="w-row" style="position: relative;">
+            <div class="w-col w-col-6" style="position: static;">
+                <h4>自选股选择</h4>
+                <select id="stock-selection" class="w-select" style="width: 85%;">
+                    <!--<option>农业银行 sh600606</option>-->
+                    <!--<option>工商银行 sh601288</option>-->
+                    <!--<option>保利地产 sh123456</option>-->
+                </select>
+                <input id="start-time" type="hidden" value=""/>
+                <input id="end-time" type="hidden" value=""/>
+                <select class='w-select custom-date' style="width: 85%;position: static;">
+                    <option value='7'>7 Days</option>
+                    <option value='30'>30 Days</option>
+                    <option selected='selected' value='90'>90 Days</option>
+                    <option value='180'>180 Days</option>
+                    <option value='365'>365 Days</option>
+                    <option value='custom'>Custom</option>
+                </select>
+                <button onclick="updateChart()" id="simulate-button" class="w-button" style="width: 42%">
+                    查看历史数据
+                </button>
+                <button onclick="addStock()" id="add-button" class="w-button" style="width: 42%">
+                    添加本支股票
+                </button>
+                <hr style="margin-top: 20px"/>
+
+                <h4>起始金额</h4>
+
+                <div class="w-clearfix">
+                    <input id="start-fund" type="text" placeholder="Edit your start fund..."
+                           style="margin: 0;float: left;">
+                    <h4 style="float:left;margin-left: 15px">RMB</h4>
+                </div>
+                <hr style="margin-top: 20px"/>
+                <h4>已选股票</h4>
+
+                <div id="table" class="table-responsive-vertical shadow-z-1" style="width:85%;">
+                    <table id="stock-table" class="table table-hover table-mc-light-blue">
+                        <!--<tr>-->
+                        <!--<td id="sh600606" style="cursor: pointer">-->
+                        <!--<div style="float: right;font-size: 30px;padding-left: 10px">-->
+                        <!--<a onclick="deleteStock('sh600606')"-->
+                        <!--style="cursor:pointer;text-decoration: none">×</a></div>-->
+                        <!--<div style="float: left;">-->
+                        <!--<a style="font-weight: bold;text-decoration:none;font-size: 18px">绿地控股</a><br>-->
+                        <!--sh600606-->
+                        <!--</div>-->
+                        <!--<div style="float: right;font-size: 16px">-->
+                        <!--1000元<br>-->
+                        <!--2016-03-01 ~ 2016-06-06-->
+                        <!--</div>-->
+                        <!--</td>-->
+                        <!--</tr>-->
+                    </table>
+                </div>
+
+            </div>
+            <div class="w-col w-col-6">
+                <h4>历史数据预览</h4>
+
+                <div id="recent-chart" class="recent-chart"></div>
+            </div>
+        </div>
+
+        <div onclick="setOptions()" class="button-fill orange" style="float:right;margin-bottom: 20px">
+            <div class="button-text">设置指标!</div>
+            <div class="button-inside">
+                <div class="inside-text">Start!</div>
+            </div>
+        </div>
+        <div onclick="advance()" class="button-fill orange" style="float:right;margin-bottom: 20px;margin-right: 10px">
+            <div class="button-text">进阶模式!</div>
+            <div class="button-inside">
+                <div class="inside-text">Start!</div>
+            </div>
+        </div>
+    </div>
+    <div id="if-setting" class="scheme-setting float-background" style="display: none;">
+        <h3 style="margin-bottom: 0;">条件设置</h3>
+
+        <p style="font-size: 14px;margin-top: 0;padding-top: 0;">Condition settings</p>
+        <hr/>
+        <div class="w-row">
+            <div class="w-col w-col-6">
+                <h4>指标设置IF..THEN..</h4>
+                <hr/>
+                <ul>
+                    <li id="price-condition-button">滑动状况Slide Condition</li>
+                    <li id="up-condition-button">连续上升Continuous Upwards</li>
+                    <li id="down-condition-button">连续下跌Continous Downwards</li>
+                </ul>
+            </div>
+            <div class="w-col w-col-6">
+                <h4>已选条件</h4>
+                <hr/>
+                <table id="condition-table" class="table table-hover table-mc-light-blue float-background">
+                    <!--<tr>-->
+                    <!--<td>-->
+                    <!--<div id="sh600606-price-condition" style="float: left;font-size: 18px;font-weight: bold">-->
+                    <!--股价条件-->
+                    <!--</div>-->
+                    <!--<div id="sh600606-price-relation" style="float: right;font-size: 18px;font-weight: bold;">-->
+                    <!--AND-->
+                    <!--</div>-->
+                    <!--<div class="w-clearfix"></div>-->
+                    <!--<h5>IF</h5>-->
+
+                    <!--<div id="sh600606-price-open">每日开盘价: 10</div>-->
+                    <!--<div id="sh600606-price-close">每日收盘价: 12</div>-->
+                    <!--<h5>THEN</h5>-->
+
+                    <!--<div id="sh600606-price-then">卖出: 1000股</div>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                </table>
+            </div>
+        </div>
+
+        <div onclick="startScheme()" class="button-fill orange" style="float:right;margin-bottom: 20px">
+            <div class="button-text">运行策略!</div>
+            <div class="button-inside">
+                <div class="inside-text">Start!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="advance-setting" class="scheme-setting float-background" style="display: none;">
+        <h3 style="margin-bottom: 0;">进阶模式</h3>
+
+        <p style="font-size: 14px;margin-top: 0;padding-top: 0;">Advance Module</p>
+        <hr/>
+        <div class="w-row">
+            <div class="w-col w-col-9">
+                <h4>用Python代码编写高级策略</h4>
+
+                <div class="w-clearfix" style="height: 400px">
+        <textarea id="scheme-code" placeholder="Edit your scheme with python codes..."
+                  class="w-input"
+                  style="height: 65%;max-width: 100%;max-height:90%"></textarea>
+                </div>
+            </div>
+            <div class="w-col w-col-3">
+                <h4>参考手册</h4>
+
+                <p style="font-size: 14px">Update by Sissel 2016-06-17</p>
+
+                <p style="font-size: 14px">Written by Sissel 2016-06-14</p>
+                <button onclick="openInstruction()" class="w-button" style="width: 100%;">查看</button>
+            </div>
+        </div>
+
+        <div onclick="startAdvancedScheme()" class="button-fill orange" style="float:right;margin-bottom: 20px">
+            <div class="button-text">运行策略!</div>
+            <div class="button-inside">
+                <div class="inside-text">Start!</div>
+            </div>
+        </div>
+        <div onclick="setOptions()" class="button-fill orange"
+             style="float:right;margin-bottom: 20px;margin-right: 10px">
+            <div class="button-text">简单策略!</div>
+            <div class="button-inside">
+                <div class="inside-text">Start!</div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<div id="result" class="w-section section" style="display: block;">
+    <h3 class="center">Scheme Result</h3>
+    <hr/>
+    <div id="result-chart" class="result-chart"></div>
+</div>
+
+<div class="w-section footer-section">
+    <div class="w-container">
+        <div class="w-row">
+            <div class="w-col w-col-3"><a href="./" class="w-nav-brand logo-footer">
+                <div class="logo-text footer-logo"><strong>STOCKEY</strong></div>
+            </a></div>
+            <div class="w-col w-col-9 w-clearfix footer-link-col">
+                <a href="#" data-ix="show-contact-overlay" class="nav-link footer-link contact">about us</a>
+                <a href="./scheme.html" class="nav-link footer-link">scheme</a>
+                <a href="./selections.html" class="nav-link footer-link">selections</a>
+                <a href="./market.html" class="nav-link footer-link">market</a>
+                <a href="./" class="nav-link footer-link">Home</a></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/sweet-alert.js"></script>
+<script src="js/pre-login.js"></script>
+<script src="js/scheme-setting.js"></script>
+<script src="js/hero-hide.js"></script>
+<script src="js/jquery.json.js"></script>
+<script type="text/javascript"
+        src="https://daks2k3a4ib2z.cloudfront.net/573dfa84ee15ab7f704bce71/js/webflow.a4e23db19.js"></script>
+<!--[if lte IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

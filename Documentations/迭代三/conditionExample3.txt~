@@ -1,0 +1,23 @@
+&&name
+continue_rise
+
+&&description
+when a stock continue rising for x days
+
+&&variable
+days=5
+
+&&const
+from zipline import symbol
+context.stock1 = symbol($stock)
+
+&&compute
+days_data = data.history(context.stock1, 'close', $days, '1d')
+boolVar = True
+for i in range($days-1):
+        if days_data[-i-2] > days_data[-i-1]:
+            boolVar = False
+            break
+
+&&condition
+boolVar

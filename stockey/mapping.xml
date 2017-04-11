@@ -1,0 +1,17 @@
+<mapping>
+	<class name="org.xeon.stockey.vo.StockVO">
+		<bags>
+			<bag name="org.xeon.stockey.po.StockPO" />
+			<bag name="org.xeon.stockey.po.DailyDataPO" />
+		</bags>
+		<property name="Symbol">
+			<mapping name="StockPO.Symbol"/>
+		</property>
+		<property name="Name">
+			<mapping name="StockPO.name"/>
+		</property>
+		<property name="Price">
+			<mapping name="DailyDataPO.Price"/>
+		</property>
+	</class>
+</mapping>

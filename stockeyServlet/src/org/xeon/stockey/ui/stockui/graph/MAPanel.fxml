@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="82.0" stylesheets="@../../css/graph.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.graph.MAPanelController">
+   <children>
+      <Label layoutX="61.0" layoutY="64.0" prefHeight="15.0" prefWidth="15.0" styleClass="ma5" stylesheets="@../../css/graph.css" />
+      <CheckBox fx:id="ma5" layoutY="63.0" mnemonicParsing="false" onAction="#setMA" text="MA5" />
+      <Label layoutX="61.0" layoutY="100.0" prefHeight="15.0" prefWidth="15.0" styleClass="ma10" stylesheets="@../../css/graph.css" />
+      <Label layoutX="61.0" layoutY="135.0" prefHeight="15.0" prefWidth="15.0" styleClass="ma20" />
+      <Label layoutX="61.0" layoutY="172.0" prefHeight="15.0" prefWidth="15.0" styleClass="ma30" />
+      <CheckBox fx:id="ma10" layoutY="100.0" mnemonicParsing="false" onAction="#setMA" prefHeight="18.0" prefWidth="61.0" text="MA10" />
+      <CheckBox fx:id="ma20" layoutY="134.0" mnemonicParsing="false" onAction="#setMA" text="MA20" />
+      <CheckBox fx:id="ma30" layoutY="171.0" mnemonicParsing="false" onAction="#setMA" text="MA30" />
+   </children>
+</AnchorPane>

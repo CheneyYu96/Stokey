@@ -1,0 +1,183 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Sun May 22 2016 15:34:45 GMT+0000 (UTC) -->
+<html data-wf-site="573dfa84ee15ab7f704bce71" data-wf-page="573dfa84ee15ab7f704bce74" data-wf-status='1'
+      data-wf-domain="alandelips-first-site.webflow.io">
+<head>
+    <meta charset="utf-8">
+    <title>Stockey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Webflow">
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <script src="https://cdn.bootcss.com/webfont/1.6.24/webfontloader.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script>WebFont.load({
+        google: {
+            families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+        }
+    });</script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+    <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+</head>
+<body>
+<div class="wrapper contact-overlay">
+    <a onclick="closeLogin()" class="contact-overlay-close"><font color="white" size="5sp">✕</font></a>
+
+    <div class="container">
+        <h1 id="logining" style="display: none"><font color="white">登录中...</font></h1>
+
+        <h1 id="signing" style="display: none"><font color="white">注册中...</font></h1>
+
+        <form class="form">
+            <ul class="tab-group">
+                <li id="login-tab" class="tab active"><a onclick="tabLogin()">登录</a></li>
+                <li id="signup-tab" class="tab"><a onclick="tabSignup()">注册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="login">
+                    <h1><font color="white">Welcome</font></h1>
+
+                    <form class="form">
+                        <input id="username" type="text" placeholder="用户名">
+                        <input id="password" type="password" placeholder="密码">
+                        <button id="login-button" type="submit">登录</button>
+                    </form>
+                </div>
+                <div id="signup">
+                    <h1><font color="white">加入StockEy</font></h1>
+
+                    <form class="form">
+                        <input id="signup_username" type="text" placeholder="用户名">
+                        <input id="signup_password" type="password" placeholder="密码">
+                        <input id="confirm_password" type="password" placeholder="确认密码">
+                        <input id="signup_email" type="email" placeholder="邮箱">
+                        <button type="submit" id="sign-button">注册</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div>
+    <div class="w-section hero-section home-page-hero">
+        <div data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" class="w-nav nav">
+            <div class="w-container" style="height:60px">
+                <a href="./" class="w-nav-brand">
+                    <div class="logo-text"><strong>STOCKEY</strong></div>
+                </a>
+                <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
+                    <a href="./" class="w-nav-link nav-link">Home</a>
+                    <a href="./market.html" class="w-nav-link nav-link">Market</a>
+                    <a href="./selections.html" class="w-nav-link nav-link">Selections</a>
+                    <a href="./scheme.html" class="w-nav-link nav-link">scheme</a>
+                    <a id="login-signup-button" href="javascript:showLogin()" class="w-nav-link nav-link contact">
+                        Login/Sign Up
+                    </a>
+
+                    <div class="w-nav-link nav-link">
+                        <div class="user-menu-toggle">
+                            <div>
+                                <img class="profile-img" src="images/1.jpg">
+
+                                <div id="user-title" style="padding-left:8px;float: right;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User menu -->
+                        <div class="user-menu">
+                            <div class="user-info">
+                                <div class="profile-img"
+                                     style="background-image:url(images/1.jpg)">
+                                </div>
+                                <h3 id="user-name">Alan Delip</h3>
+
+                            </div>
+                            <div class="menu-nav">
+                                <li onclick="link('./selections.html')"><span></span>My Selections</li>
+                                <li onclick="link('./scheme.html')"><span></span>My Schemes</li>
+                                <li onclick="logout()"><span></span>Sign Out</li>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="w-nav-button menu-button">
+                    <div class="w-icon-nav-menu"></div>
+                </div>
+            </div>
+        </div>
+        <h1 data-ix="hero-text" class="home-page-heading">This is the <strong>KEY.</strong></h1>
+
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="w-section section top-section home-page">
+        <div class="w-container hero-container">
+            <div class="w-clearfix"><a href="./market.html" data-ix="tile-1" class="w-inline-block _60block">
+                <div class="tile-image market-image">
+                    <div class="tile-text">market</div>
+                </div>
+            </a><a href="./selections.html" data-ix="tile-2" class="w-inline-block _40block">
+                <div class="tile-image selection-image">
+                    <div class="tile-text">selections</div>
+                </div>
+            </a><a href="./scheme.html" data-ix="tile-3" class="w-inline-block _33block">
+                <div class="tile-image scheme-image">
+                    <div class="tile-text">scheme</div>
+                </div>
+            </a><a href="#" data-ix="show-contact-overlay" class="w-inline-block _33block">
+                <div class="tile-image aboutus-image">
+                    <div class="tile-text">About<br>us</div>
+                </div>
+            </a>
+
+                <div data-ix="tile-4" class="_33block">
+                    <div class="w-clearfix">
+                        <a href="#" class="w-inline-block social-block"></a>
+                        <a href="#" class="w-inline-block social-block facebook"></a>
+                        <a href="#" class="w-inline-block social-block pinterest"></a>
+                        <a href="#" class="w-inline-block social-block dribbble"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-section footer-section">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-3"><a href="/" class="w-nav-brand logo-footer">
+                    <div class="logo-text footer-logo"><strong>STOCKEY</strong></div>
+                </a></div>
+
+                <div class="w-col w-col-9 w-clearfix footer-link-col">
+                    <a href="./scheme.html" class="nav-link footer-link">scheme</a>
+                    <a href="./selections.html" class="nav-link footer-link">selections</a>
+                    <a href="./market.html" class="nav-link footer-link">market</a>
+                    <a href="./index.html" class="nav-link footer-link">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/sweet-alert.js"></script>
+    <script src="js/pre-login.js"></script>
+    <script type="text/javascript"
+            src="https://daks2k3a4ib2z.cloudfront.net/573dfa84ee15ab7f704bce71/js/webflow.a4e23db19.js"></script>
+    <!--[if lte IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

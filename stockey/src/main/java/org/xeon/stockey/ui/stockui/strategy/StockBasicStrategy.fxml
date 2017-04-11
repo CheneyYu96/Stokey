@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xeon.stockey.ui.stockui.strategy.StockBasicStrategyController">
+   <children>
+      <Label layoutX="172.0" layoutY="466.0" prefHeight="45.0" prefWidth="522.0" />
+      <AnchorPane layoutY="-1.0" prefHeight="216.0" prefWidth="745.0">
+         <children>
+            <DatePicker fx:id="endDate" layoutX="344.0" layoutY="14.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="27.0" layoutY="18.0" text="起始时间">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="18.0" text="结束时间">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="beginDate" layoutX="101.0" layoutY="14.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="520.0" layoutY="18.0" text="总金额">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalNumber" layoutX="597.0" layoutY="18.0" prefHeight="20.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="59.0" text="股票代码">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="addChoiceBox" layoutX="101.0" layoutY="56.0" onAction="#clearMoneyNumber" prefHeight="27.0" prefWidth="241.0" />
+            <Button layoutX="625.0" layoutY="56.0" mnemonicParsing="false" onAction="#addStock" text="添加" />
+            <TableView fx:id="stockTableView" layoutX="41.0" layoutY="102.0" prefHeight="127.0" prefWidth="664.0">
+              <columns>
+                <TableColumn fx:id="stockNameColumn" prefWidth="155.0" text="股票名称" />
+                <TableColumn fx:id="stockCodeColumn" minWidth="0.0" prefWidth="178.0" text="股票代码" />
+                  <TableColumn fx:id="moneyColumn" prefWidth="171.0" text="买入金额" />
+                  <TableColumn fx:id="shareNumberColumn" prefWidth="159.0" text="买入手数" />
+              </columns>
+            </TableView>
+            <Label layoutX="686.0" layoutY="18.0" prefHeight="20.0" prefWidth="21.0" text="￥">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputMoney" layoutX="380.0" layoutY="54.0" onAction="#getMoney" prefHeight="32.0" prefWidth="114.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="362.0" layoutY="60.0" prefHeight="20.0" prefWidth="36.0" text="￥">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="shareNumber" layoutX="515.0" layoutY="59.0" prefHeight="20.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="592.0" layoutY="59.0" text="(手)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="685.0" layoutY="56.0" mnemonicParsing="false" onAction="#removeStock" text="移除" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="228.0" prefHeight="269.0" prefWidth="745.0">
+         <children>
+            <Button layoutX="583.0" layoutY="258.0" mnemonicParsing="false" onAction="#connect2Strategy" prefHeight="30.0" prefWidth="98.0" text="提交测试" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
